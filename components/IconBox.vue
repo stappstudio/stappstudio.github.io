@@ -4,10 +4,10 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
           <div class="brook-section-title wow move-up">
-            <h3 class="heading heading-h3 font-large">
-              We strip back the unnecessary
+            <h3 class="heading heading-h3 font-large theme-color-2">
+              Providing a complete app solution
             </h3>
-            <hr class="mt--35 bg_color--6" :style="{width: '200px', height: '5px'}" />
+            <hr class="mt--35 bg_color--6" :style="{width: '200px', height: '5px'}">
             <!-- <div class="thumb mt--35">
               <img src="/img/service/icon-box/wavy-icon.png" alt="wavy icon">
             </div> -->
@@ -25,7 +25,7 @@
         <div class="col-12">
           <div class="row">
             <div v-for="service in services" :key="service.id" class="col-lg-4 col-sm-6 wow move-up">
-              <div class="icon-box text-center no-border bg-transparant with-padding mt--10">
+              <div class="icon-box text-center no-border bg-transparant mt--10">
                 <div class="inner">
                   <div class="icon">
                     <img :src="service.icon" :alt="service.alt">
@@ -57,21 +57,21 @@ export default {
           id: 1,
           icon: '/img/icon/box-icon-01.png',
           alt: 'icon image',
-          heading: 'Modern design',
+          heading: 'UI/UX Design',
           text: 'Brook embraces a modern look with various enhanced pre-defined page elements.'
         },
         {
           id: 2,
           icon: '/img/icon/box-icon-02.gif',
           alt: 'icon image',
-          heading: 'UI/UX designs',
+          heading: 'Development',
           text: 'We successfully implemented numerous UI/UX projects for both global & local clients.'
         },
         {
           id: 3,
           icon: '/img/icon/box-icon-03.gif',
           alt: 'icon image',
-          heading: 'SEO marketing',
+          heading: 'Deployment',
           text: 'Brook embraces a modern look with various enhanced pre-defined page elements.'
         }
       ]

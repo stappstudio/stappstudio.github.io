@@ -2,18 +2,18 @@
     Start Up Service 
 ==========================*/
 .startupservice-wrapper{
-    padding: 150px 100px 150px 316px;
+    padding: 10px 100px 50px 316px;
     
     @media #{$laptop-device} {
-        padding: 50px 46px 50px 66px;
+        padding: 10px 46px 50px 66px;
     }
 
     @media #{$lg-layout, $md-layout} {
-        padding: 90px 34px 90px 66px;
+        padding: 10px 34px 50px 66px;
     }
 
     @media #{$sm-layout} {
-        padding: 90px 15px 90px 35px;
+        padding: 10px 15px 50px 35px;
     }
 }
 
