@@ -1,10 +1,10 @@
 <template>
-  <div class="brook-icon-boxes-area  bg_color--4 pb--60 pb_md--40 pb_sm--40 poss_relative">
+  <div class="brook-icon-boxes-area  bg_color--1 pb--60 pb_md--40 pb_sm--40 poss_relative">
     <div class="container pt--50">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
           <div class="brook-section-title wow move-up">
-            <h3 class="heading heading-h3 font-large theme-color-2">
+            <h3 class="heading heading-h3 font-large theme-color">
               Providing a complete app solution
             </h3>
             <hr class="mt--35 bg_color--6" :style="{width: '200px', height: '5px'}">

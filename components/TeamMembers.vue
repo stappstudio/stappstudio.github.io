@@ -30,19 +30,19 @@
                       <img class="bg_color--3" :style="{width: '200px', height: '200px'}">
                       <!-- <img :src="teamMember.image" :alt="teamMember.alt"> -->
                     </div>
-                    <div class="social-network">
+                    <!-- <div class="social-network">
                       <div class="social-list">
                         <a v-for="social in teamMember.socials" :key="social.i" :href="social.url">
                           <i :class="social.icon" />
                         </a>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="content-body">
-                    <h4 class="heading">
+                    <h4 class="heading theme-color-2">
                       {{ teamMember.name }}
                     </h4>
-                    <div class="position">
+                    <div class="position theme-color">
                       {{ teamMember.description }}
                     </div>
                   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="brook-whatdo-area ptb--50 ptb-md--40 ptb-sm--30 bg_color--4">
+  <div class="brook-whatdo-area ptb--50 ptb-md--40 ptb-sm--30 bg_color--1">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 offset-lg-2">
@@ -8,7 +8,7 @@
               What we do
             </h5>
             <div class="bkseparator--30" />
-            <h3 class="heading heading-h3 theme-color">
+            <h3 class="heading heading-h3 font-large theme-color">
               Effective solution<br> for every businesses
             </h3>
           </div>
