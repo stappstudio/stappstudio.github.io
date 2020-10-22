@@ -1,6 +1,109 @@
 {
+  "header": {
+    "slogan": "desenvolvendo experiências"
+  },
   "hero": {
-    "subtitle": "Subtítulo em Português",
-    "title": "Título em Português"
+    "sectionSubtitle": "Subtítulo em Português",
+    "sectionTitle": "Título em Português"
+  },
+  "mainFeatures": {
+    "sectionTitle": "uma solução completa para seu app",
+    "sectionSubtitle": "explicação da solução completa falando sobre todos os passos necessários e etc",
+    "features": [
+      {
+        "id": 1,
+        "iconSrc": "/img/icon/box-icon-01.png",
+        "name": "Título da característica",
+        "description": "Descrição da característica principal ocupando mais de uma linha."
+      },
+      {
+        "id": 2,
+        "iconSrc": "/img/icon/box-icon-02.gif",
+        "name": "Título da característica",
+        "description": "Descrição da característica principal ocupando mais de uma linha."
+      },
+      {
+        "id": 3,
+        "iconSrc": "/img/icon/box-icon-03.gif",
+        "name": "Título da característica",
+        "description": "Descrição da característica principal ocupando mais de uma linha."
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": 1,
+      "iconName": "fas fa-code",
+      "name": "Nome da característica",
+      "description": "Descrição da característica."
+    },
+    {
+      "id": 2,
+      "iconName": "fas fa-terminal",
+      "name": "Nome da Característica",
+      "description": "Descrição da característica."
+    },
+    {
+      "id": 3,
+      "iconName": "fas fa-file-code",
+      "name": "Nome da Característica",
+      "description": "Descrição da característica."
+    },
+    {
+      "id": 4,
+      "iconName": "fas fa-bug",
+      "name": "Nome da Característica",
+      "description": "Descrição da característica."
+    },
+    {
+      "id": 5,
+      "iconName": "fas fa-meteor",
+      "name": "Nome da Característica",
+      "description": "Descrição da característica."
+    },
+    {
+      "id": 6,
+      "iconName": "fas fa-plane",
+      "name": "Nome da Característica",
+      "description": "Descrição da característica."
+    }
+  ],
+  "informations": {
+    "sectionTitle": "Título da seção",
+    "sectionSubtitle": "Subtítulo da seção informações",
+    "informations": [
+      {
+        "title": "Título da info #1",
+        "description": "Descrição detalhada da informação #1 ocupando algumas linhas"
+      },
+      {
+        "title": "Título da info #2",
+        "description": "Descrição detalhada da informação #2 ocupando algumas linhas"
+      }
+    ]
+  },
+  "teamMembers": {
+    "sectionTitle": "Nosso Time",
+    "sectionSubtitle": "A gente é bom d+",
+    "members": [
+      {
+        "id": 1,
+        "name": "João de Souza",
+        "description": "Desenvolvedor",
+        "imageSrc": ""
+      },
+      {
+        "id": 2,
+        "name": "Edison Santiago",
+        "description": "Desenvolvedor",
+        "imageSrc": ""
+      }
+    ]
+  },
+  "footer": {
+    "message": "Vamos construir algo?",
+    "contactUs": "Entre em contato",
+    "email": "contato@stapp.studio",
+    "copyright": "© 2020 Stapp Studio. Todos os Direitos Reservados."
   }
 }

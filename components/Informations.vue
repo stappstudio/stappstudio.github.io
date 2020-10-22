@@ -5,11 +5,11 @@
         <div class="col-lg-10 offset-lg-2">
           <div class="bk-title--default text-left">
             <h5 class="heading heading-h5 text-primary">
-              What we do
+              {{ $t('informations.sectionTitle') }}
             </h5>
             <div class="bkseparator--30" />
             <h3 class="heading heading-h3 font-large text-secondary">
-              Effective solution<br> for every businesses
+              {{ $t('informations.sectionSubtitle') }}
             </h3>
           </div>
         </div>
@@ -24,11 +24,11 @@
           <div class="what-do mt--40">
             <div class="content">
               <h5 class="heading heading-h5 text-primary wow move-up">
-                Fresh ideas
+                {{ $t('informations.informations[0].title') }}
               </h5>
               <div class="bkseparator--20" />
               <p class="bk_pra wow move-up">
-                Brook presents your services with flexible, convenient and multipurpose layouts. You can select your favorite layouts & elements for particular projects with unlimited customization possibilities.
+                {{ $t('informations.informations[0].description') }}
               </p>
             </div>
           </div>
@@ -37,11 +37,11 @@
           <div class="what-do mt--40">
             <div class="content">
               <h5 class="heading heading-h5 text-primary wow move-up">
-                Unique designs
+                {{ $t('informations.informations[1].title') }}
               </h5>
               <div class="bkseparator--20" />
               <p class="bk_pra wow move-up">
-                Pixel-perfect replication of the designers is intended for both front-end & back-end developers to build their pages with greater comfort thanks to the higher custom ability as well as flexibility.
+                {{ $t('informations.informations[1].description') }}
               </p>
             </div>
           </div>

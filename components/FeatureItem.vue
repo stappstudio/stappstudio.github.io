@@ -1,14 +1,14 @@
 <template>
   <div class="single-motive-speach text-white">
     <div class="icon">
-      <i :class="feature.icon" />
+      <i :class="[feature.iconName, 'fa-fw']" />
     </div>
     <div class="content">
       <h4>
-        {{ feature.heading }}
+        {{ feature.name }}
       </h4>
       <p>
-        {{ feature.text }}
+        {{ feature.description }}
       </p>
     </div>
   </div>

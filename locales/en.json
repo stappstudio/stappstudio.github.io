@@ -1,6 +1,109 @@
 {
+  "header": {
+    "slogan": "developing experiences"
+  },
   "hero": {
-    "subtitle": "English Subtitle",
-    "title": "English title"
+    "sectionSubtitle": "English Subtitle",
+    "sectionTitle": "English title"
+  },
+  "mainFeatures": {
+    "sectionTitle": "Providing a complete app solution",
+    "sectionSubtitle": "detailed explication of the complete solution talking about all the needed steps and so on",
+    "features": [
+      {
+        "id": 1,
+        "iconSrc": "/img/icon/box-icon-01.png",
+        "name": "Main Feature Title",
+        "description": "Main Feature Detailed description spanning more than one line."
+      },
+      {
+        "id": 2,
+        "iconSrc": "/img/icon/box-icon-02.gif",
+        "name": "Main Feature Title",
+        "description": "Main Feature Detailed description spanning more than one line."
+      },
+      {
+        "id": 3,
+        "iconSrc": "/img/icon/box-icon-03.gif",
+        "name": "Main Feature Title",
+        "description": "Main Feature Detailed description spanning more than one line."
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": 1,
+      "iconName": "fas fa-code",
+      "name": "Feature Name",
+      "description": "Feature description."
+    },
+    {
+      "id": 2,
+      "iconName": "fas fa-terminal",
+      "name": "Feature Name",
+      "description": "Feature description."
+    },
+    {
+      "id": 3,
+      "iconName": "fas fa-file-code",
+      "name": "Feature Name",
+      "description": "Feature description."
+    },
+    {
+      "id": 4,
+      "iconName": "fas fa-bug",
+      "name": "Feature Name",
+      "description": "Feature description."
+    },
+    {
+      "id": 5,
+      "iconName": "fas fa-meteor",
+      "name": "Feature Name",
+      "description": "Feature description."
+    },
+    {
+      "id": 1,
+      "iconName": "fas fa-plane",
+      "name": "Feature Name",
+      "description": "Feature description."
+    }
+  ],
+  "informations": {
+    "sectionTitle": "Section title",
+    "sectionSubtitle": "Informations section subtitle",
+    "informations": [
+      {
+        "title": "Info #1 title",
+        "description": "Detailed info #1 description spanning some lines"
+      },
+      {
+        "title": "Info #2 title",
+        "description": "Detailed info #2 description spanning some lines"
+      }
+    ]
+  },
+  "teamMembers": {
+    "sectionTitle": "Creative Team",
+    "sectionSubtitle": "Our team rocks!",
+    "members": [
+      {
+        "id": 1,
+        "name": "João de Souza",
+        "description": "Developer",
+        "imageSrc": ""
+      },
+      {
+        "id": 2,
+        "name": "Edison Santiago",
+        "description": "Developer",
+        "imageSrc": ""
+      }
+    ]
+  },
+  "footer": {
+    "message": "Let's build something?",
+    "contactUs": "Get in touch",
+    "email": "us@stapp.studio",
+    "copyright": "© 2020 Stapp Studio. All Rights Reserved."
   }
 }

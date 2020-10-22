@@ -14,7 +14,7 @@
           <div class="header-text text-right">
             <h5 class="heading heading-h5 font-20 text-white">
               <i class="fas fa-laptop-code" />
-              developing experiences
+              {{ $t('header.slogan') }}
             </h5>
           </div>
         </div>

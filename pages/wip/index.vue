@@ -2,13 +2,13 @@
   <div class="main-container">
     <Header />
 
-    <HeroTwo />
+    <Hero />
 
-    <IconBox />
+    <MainFeatures />
 
     <Features />
 
-    <WhatWeDo />
+    <Informations />
 
     <TeamMembers />
 
@@ -20,11 +20,10 @@
 export default {
   components: {
     Header: () => import('@/components/Header'),
-    // Hero: () => import('@/components/Hero'),
-    HeroTwo: () => import('@/components/HeroTwo'),
-    IconBox: () => import('@/components/IconBox'),
+    Hero: () => import('@/components/Hero'),
+    MainFeatures: () => import('@/components/MainFeatures'),
     Features: () => import('@/components/Features'),
-    WhatWeDo: () => import('@/components/WhatWeDo'),
+    Informations: () => import('@/components/Informations'),
     TeamMembers: () => import('@/components/TeamMembers'),
     Footer: () => import('@/components/Footer')
   }

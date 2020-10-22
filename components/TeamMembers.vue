@@ -5,7 +5,7 @@
         <div class="col-lg-3 mt--40">
           <div class="brook-section-title wow move-up">
             <h3 class="heading heading-h3 font-large pr--40 text-secondary">
-              {{ sectionTitle }}
+              {{ $t('teamMembers.sectionTitle') }}
             </h3>
             <hr class="mt--35 bg-primary" :style="{width: '200px', height: '5px'}">
             <!-- <div class="thumb mt--35">
@@ -13,7 +13,7 @@
             </div> -->
             <div class="content mt--45">
               <p class="bk_pra line-height-1-87 font-16">
-                {{ sectionSubtitle }}
+                {{ $t('teamMembers.sectionSubtitle') }}
               </p>
             </div>
           </div>
@@ -21,14 +21,14 @@
 
         <div class="col-lg-9">
           <div class="row">
-            <div v-for="teamMember in teamMembers" :key="teamMember.id" class="col-lg-6 col-sm-6 wow move-up mt--40">
+            <div v-for="teamMember in $t('teamMembers.members')" :key="teamMember.id" class="col-lg-6 col-sm-6 wow move-up mt--40">
               <div class="team team_style--4">
                 <div class="inner">
                   <div class="content-header">
                     <div class="thumb">
                       <!-- Remove the img below when we have real images -->
-                      <img class="bg-secondary" :style="{width: '200px', height: '200px'}">
-                      <!-- <img :src="teamMember.image" :alt="teamMember.alt"> -->
+                      <img class="bg-secondary rounded-circle" :style="{width: '200px', height: '200px'}">
+                      <!-- <img :src="teamMember.imageSrc" :alt="teamMember.alt"> -->
                     </div>
                     <!-- <div class="social-network">
                       <div class="social-list">
@@ -55,58 +55,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      sectionTitle: 'Creative Team',
-      sectionSubtitle: 'Each member of our team is a specialist in his or her field. Together, we make sure you\'re receiving the most dedicated services with best quality.',
-      teamMembers: [
-        {
-          id: 1,
-          name: 'João de Souza',
-          description: 'Developer',
-          image: '/img/team/team-4/team-member-alt-01.png',
-          alt: 'team member',
-          socials: [
-            {
-              url: 'https://www.facebook.com/',
-              icon: 'fab fa-facebook'
-            },
-            {
-              url: 'https://twitter.com/',
-              icon: 'fab fa-twitter'
-            },
-            {
-              url: 'https://www.instagram.com/',
-              icon: 'fab fa-instagram'
-            }
-          ]
-        },
-        {
-          id: 2,
-          name: 'Edison Santiago',
-          description: 'Developer',
-          image: '/img/team/team-4/team-member-alt-02.png',
-          alt: 'team member',
-          socials: [
-            {
-              url: 'https://www.facebook.com/',
-              icon: 'fab fa-facebook'
-            },
-            {
-              url: 'https://twitter.com/',
-              icon: 'fab fa-twitter'
-            },
-            {
-              url: 'https://www.instagram.com/',
-              icon: 'fab fa-instagram'
-            }
-          ]
-        }
-      ]
-    }
-  }
-}
-</script>
