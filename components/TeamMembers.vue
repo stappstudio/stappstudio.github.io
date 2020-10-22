@@ -1,13 +1,13 @@
 <template>
-  <div class="bk-team-area bg_color--1 pt--55 pb--75 pt_md--20 pt_sm--20 pb_md--40 pb_sm--40 team-bottom-text-image" :style="{backgroundImage: `url('/img/icons/team.png')`}">
+  <div class="bk-team-area bg-white pt--55 pb--75 pt_md--20 pt_sm--20 pb_md--40 pb_sm--40 team-bottom-text-image" :style="{backgroundImage: `url('/img/icons/team.png')`}">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 mt--40">
           <div class="brook-section-title wow move-up">
-            <h3 class="heading heading-h3 font-large pr--40 theme-color">
+            <h3 class="heading heading-h3 font-large pr--40 text-secondary">
               {{ sectionTitle }}
             </h3>
-            <hr class="mt--35 bg_color--6" :style="{width: '200px', height: '5px'}">
+            <hr class="mt--35 bg-primary" :style="{width: '200px', height: '5px'}">
             <!-- <div class="thumb mt--35">
               <img src="/img/service/icon-box/wavy-icon.png" alt="Multipurpose">
             </div> -->
@@ -27,7 +27,7 @@
                   <div class="content-header">
                     <div class="thumb">
                       <!-- Remove the img below when we have real images -->
-                      <img class="bg_color--3" :style="{width: '200px', height: '200px'}">
+                      <img class="bg-secondary" :style="{width: '200px', height: '200px'}">
                       <!-- <img :src="teamMember.image" :alt="teamMember.alt"> -->
                     </div>
                     <!-- <div class="social-network">
@@ -39,10 +39,10 @@
                     </div> -->
                   </div>
                   <div class="content-body">
-                    <h4 class="heading theme-color-2">
+                    <h4 class="heading text-primary">
                       {{ teamMember.name }}
                     </h4>
-                    <div class="position theme-color">
+                    <div class="position">
                       {{ teamMember.description }}
                     </div>
                   </div>

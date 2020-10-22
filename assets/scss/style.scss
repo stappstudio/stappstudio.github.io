@@ -141,123 +141,40 @@
 /*===================================
     Default Styles
 ====================================*/
-@import 'default/variables';
-@import 'default/mixins';
-@import 'default/reset';
-@import 'default/typography';
 @import 'default/animations';
+@import 'default/reset';
 @import 'default/shortcode';
-@import 'default/spacing';
+@import 'default/typography';
+@import 'default/variables';
+
+// @import 'default/mixins';
 @import '../fonts/fontawesome-free/css/fontawesome-all.min.css';
+
 @import '../css/lauis.css';
-@import '../css/ionicons.css';
-@import '../css/linea-font.css';
-@import '../css/cerebrisans.css';
-@import '../css/animation.css';
+// @import '../css/ionicons.css';
+// @import '../css/linea-font.css';
+// @import '../css/cerebrisans.css';
+// @import '../css/animation.css';
 
 
 /*====================================
 	Elements Styles
 =====================================*/
-@import 'elements/button';
-@import 'elements/section-title';
-@import 'elements/service';
-@import 'elements/counterup';
-@import 'elements/team';
-@import 'elements/brand';
-@import 'elements/blog-list';
-@import 'elements/contact';
-@import 'elements/about';
-@import 'elements/call-to-action';
-@import 'elements/swiper-arrow';
-@import 'elements/motivational-archive';
-@import 'elements/social';
-@import 'elements/shortnote';
-@import 'elements/flexable-image-slide';
 @import 'elements/carousel-slider';
-@import 'elements/progress-charts';
-@import 'elements/gallery';
-@import 'elements/gradation';
-@import 'elements/career';
-@import 'elements/contagion';
-@import 'elements/testimonial';
-@import 'elements/tabs';
-
+@import 'elements/social';
+@import 'elements/team';
 
 /*================================
 	Components Style
 =================================*/
-@import 'components/video';
-@import 'components/breadcrumb';
-@import 'components/instagram';
-@import 'components/popup';
-@import 'components/mega-menu';
-@import 'components/typography';
-@import 'components/list';
-@import 'components/pricing-box';
-@import 'components/icon-boxes';
 @import 'components/dividers';
-@import 'components/message-box';
-@import 'components/accordion';
-@import 'components/googlemap';
-@import 'components/rows-column';
+@import 'components/icon-boxes';
 @import 'components/info-boxes';
-
-
-/*==================================
-	Portfolio Styles
-===================================*/
-@import 'portfolio/portfolio-grid';
-@import 'portfolio/portfolio-grid-metro';
-@import 'portfolio/portfolio-caption';
-@import 'portfolio/masonry-button';
-@import 'portfolio/has-center';
-@import 'portfolio/type-hover';
-@import 'portfolio/portfolio-details';
-
-
-/*=====================================
-	Blog Grid Styles
-======================================*/
-@import 'blog-grid/blog-grid';
-@import 'blog-grid/pagination';
-@import 'blog-grid/blog-grid-no-flex';
-@import 'blog-grid/blog-grid-minimal';
-@import 'blog-grid/blog-details';
-@import 'blog-grid/blog-sidebar';
-
-
-/*====================================
-	Shop Sidebar Styles
-=====================================*/
-@import 'shop/table-form';
-
+@import 'components/typography';
 
 /*=================================
 	Template Styles
 ==================================*/
-@import 'template/header';
-@import 'template/sidebar-header';
-@import 'template/feature';
-@import 'template/startup-service';
-@import 'template/freelancer';
-@import 'template/hamber-menu';
-@import 'template/left-vertical-header';
-@import 'template/fullscreen-slider';
-@import 'template/sidebar-mobilemenu';
-@import 'template/onepage';
-@import 'template/portfolio-slide';
-@import 'template/photo-slide';
-@import 'template/vertical-slide';
-@import 'template/musician';
-@import 'template/product';
 @import 'template/footer';
-
-
-/*================================
-	Color Variation
-=================================*/
-@import 'color/color-2';
-@import './color/font-variation';
-@import 'color/preview';
-
+@import 'template/header';
+@import 'template/startup-service';

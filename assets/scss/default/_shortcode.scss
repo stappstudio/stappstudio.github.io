@@ -230,57 +230,6 @@
     width: 150px;
 }
 
-/* Background Color */
-
-@include config-bg-colors('bg_color--',
-'1'$white,
-'2'$theme-color,
-'3'#020042,
-'4'#7FFBFF,
-'5'#6200eb,
-'6'#ff0078,
-'7'#222,
-'8'#eee,
-'9'#69afed,
-'10'#f9f9f9,
-'11'#001029,
-'12'#FCB72B,
-'13'#F8A440,
-'14'#f7f1ec,
-'15'#f7f7f7,
-'16'#f4efff,
-'17'#0069FF,
-'18'#000,
-'19'#AC61EE,
-'20'#F55D4E,
-'21'#f5f3ef,
-'22'#f10,
-'23'#FBFBFD,
-'24'#68AE4A,
-'25'#BC9464,
-'26' #7BA100,
-'27' #14359E,
-'28' #CC327B,
-'29' #FFE2D9,
-'30' #906032,
-'31' #EC5B4B,
-'32' #FFF3F2,
-'33' #C1B538,
-'34' #CAE0E5,
-'35' #126CDC,
-'36' #040C33,
-'37' #F50809,
-'38' #292930,
-'39' #4BE472,
-'40' #DA9D55,
-'41' #3264F5,
-'42' #121618,
-'43' #FFC851,
-'44' #C4DCFA);
-
-
-
-
 .bg-as-text {
     // background-image: url("../img/icons/text.png");
     background-repeat: no-repeat;

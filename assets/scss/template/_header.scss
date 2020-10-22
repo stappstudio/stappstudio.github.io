@@ -617,6 +617,12 @@ header.br_header.header-default.vertical-slide-portfolio {
                 align-items: center;
                 flex-grow: 1;
 
+                img {
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+                    width: 150px;
+                }
+
                 a {
                     img {
                         padding-top: 14px;

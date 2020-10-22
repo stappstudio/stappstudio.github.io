@@ -1,13 +1,13 @@
 <template>
-  <div class="brook-icon-boxes-area  bg_color--1 pb--60 pb_md--40 pb_sm--40 poss_relative">
+  <div class="brook-icon-boxes-area bg-white pb--60 pb_md--40 pb_sm--40 poss_relative">
     <div class="container pt--50">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
           <div class="brook-section-title wow move-up">
-            <h3 class="heading heading-h3 font-large theme-color">
+            <h3 class="heading heading-h3 font-large text-secondary">
               Providing a complete app solution
             </h3>
-            <hr class="mt--35 bg_color--6" :style="{width: '200px', height: '5px'}">
+            <hr class="mt--35 bg-primary" :style="{width: '200px', height: '5px'}">
             <!-- <div class="thumb mt--35">
               <img src="/img/service/icon-box/wavy-icon.png" alt="wavy icon">
             </div> -->

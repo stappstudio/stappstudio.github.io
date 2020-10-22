@@ -5,9 +5,13 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <div class="hero-content-2 center">
-                <h6>WE WORK SMART, WE PLAY HARD</h6>
-                <h3>evolutionary creations and exquisite designs.</h3>
+              <div class="hero-content-2 text-center">
+                <h6>
+                  {{ $t('hero.subtitle') }}
+                </h6>
+                <h3>
+                  {{ $t('hero.title') }}
+                </h3>
                 <!-- <n-link to="/" class="brook-btn bk-btn-white btn-sd-size btn-rounded space-between">
                   White button
                 </n-link> -->
@@ -27,35 +31,3 @@
   background-blend-mode: darken;
 }
 </style>
-
-<script>
-export default {
-  data () {
-    return {
-      sliders: [
-        {
-          id: 1,
-          heading: 'revolutionary creations and exquisite designs.',
-          subHeading: 'WE WORK SMART, WE PLAY HARD',
-          btnUrl: '/',
-          bgImage: '/img/bg/hero-bg.jpg'
-        },
-        {
-          id: 2,
-          heading: 'revolutionary creations and exquisite designs.',
-          subHeading: 'WE WORK SMART, WE PLAY HARD',
-          btnUrl: '/',
-          bgImage: '/img/slider/authentic-studio-slide-02.jpg'
-        },
-        {
-          id: 3,
-          heading: 'revolutionary creations and exquisite designs.',
-          subHeading: 'WE WORK SMART, WE PLAY HARD',
-          btnUrl: '/',
-          bgImage: '/img/slider/authentic-studio-slide-03.jpg'
-        }
-      ]
-    }
-  }
-}
-</script>

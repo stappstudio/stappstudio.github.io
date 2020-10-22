@@ -21,6 +21,7 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     'assets/scss/style.scss',
+    'assets/scss/_variables.scss',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -41,6 +42,34 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     '@nuxtjs/style-resources',
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            iso: 'en-US',
+            file: 'en.json'
+          },
+          {
+            code: 'pt-BR',
+            iso: 'pt-BR',
+            file: 'pt-BR.json'
+          }
+        ],
+        langDir: 'locales/',
+        defaultLocale: 'en',
+        strategy: 'no_prefix',
+        vueI18n: {
+          fallbackLocale: 'en',
+          messages: {
+            'en': require('./locales/en'),
+            'pt-BR': require('./locales/pt-BR'),
+          }
+        }
+      }
+    ],
+    
   ],
 
 

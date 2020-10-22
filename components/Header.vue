@@ -5,33 +5,15 @@
         <div class="header-left-wrapper">
           <div class="branding">
             <div class="logo">
-              <n-link to="/">
-                <img src="/img/logo/stapp.png" alt="brook logo">
-              </n-link>
+              <img src="/img/logo/stapp.png" alt="brook logo">
             </div>
-          </div>
-          <div class="header-left-inner">
-            <!-- <div class="header-page-menu-style-2 d-none d-xl-block">
-              <div class="manu-hamber-2 hamberger-trigger">
-                <div>
-                  <i />
-                </div>
-              </div>
-            </div> -->
-            <!-- <div class="header-page-menu-style-2 d-block d-xl-none">
-              <div class="manu-hamber-2 popup-mobile-click">
-                <div>
-                  <i />
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
 
         <div class="header-right-wrapper d-none d-sm-block">
           <div class="header-text text-right">
             <h5 class="heading heading-h5 font-20 text-white">
-              <span class="fa fa-laptop" />
+              <i class="fas fa-laptop-code" />
               developing experiences
             </h5>
           </div>

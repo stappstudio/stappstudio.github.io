@@ -1,5 +1,5 @@
 <template>
-  <div class="brook-service-area bg_color--3">
+  <div class="brook-service-area bg-secondary">
     <div class="row align-items-center">
       <div class="row startupservice-wrapper">
         <div v-for="feature in features" :key="feature.id" class="col-lg-4 mt--40">
@@ -20,37 +20,37 @@ export default {
       features: [
         {
           id: 1,
-          icon: 'ion-ios-infinite theme-color',
+          icon: 'fas fa-code',
           heading: 'Digital Marketing',
           text: 'We conduct the marketing of products & services using latest digital technologies.'
         },
         {
           id: 2,
-          icon: 'ion-monitor',
+          icon: 'fas fa-terminal',
           heading: 'UI/UX designs',
           text: 'We conduct the marketing of products & services using latest digital technologies.'
         },
         {
           id: 3,
-          icon: 'ion-ios-baseball-outline',
+          icon: 'fas fa-file-code',
           heading: 'SEO marketing',
           text: 'We conduct the marketing of products & services using latest digital technologies.'
         },
         {
           id: 4,
-          icon: 'ion-pinpoint',
+          icon: 'fas fa-bug',
           heading: 'Resource use',
           text: 'We conduct the marketing of products & services using latest digital technologies.'
         },
         {
           id: 5,
-          icon: 'ion-pinpoint',
+          icon: 'fas fa-meteor',
           heading: 'Resource use',
           text: 'We conduct the marketing of products & services using latest digital technologies.'
         },
         {
           id: 6,
-          icon: 'ion-pinpoint',
+          icon: 'fas fa-plane',
           heading: 'Resource use',
           text: 'We conduct the marketing of products & services using latest digital technologies.'
         }

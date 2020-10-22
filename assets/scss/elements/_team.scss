@@ -1,39 +1,6 @@
 /* =====================
     Team Area 
 ========================*/
-.team-heading {
-    .heading-left {
-        h3 {
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            line-height: 1.43;
-            font-family: $body-font;
-        }
-    }
-
-    .heading-right {
-        a {
-            padding: 0;
-            border: 0;
-            background-color: transparent;
-            font-weight: 600;
-            font-size: 14px;
-            color: #222;
-            font-family: $body-font;
-
-            i {
-                padding-left: 10px;
-                color: $theme-color;
-            }
-
-            &:hover {
-                color: $theme-color;
-            }
-        }
-    }
-}
 
 
 .team {

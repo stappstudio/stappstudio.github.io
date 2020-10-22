@@ -1,14 +1,14 @@
 <template>
-  <div class="brook-whatdo-area ptb--50 ptb-md--40 ptb-sm--30 bg_color--1">
+  <div class="brook-whatdo-area ptb--50 ptb-md--40 ptb-sm--30 bg-white">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 offset-lg-2">
           <div class="bk-title--default text-left">
-            <h5 class="heading heading-h5 theme-color-2">
+            <h5 class="heading heading-h5 text-primary">
               What we do
             </h5>
             <div class="bkseparator--30" />
-            <h3 class="heading heading-h3 font-large theme-color">
+            <h3 class="heading heading-h3 font-large text-secondary">
               Effective solution<br> for every businesses
             </h3>
           </div>
@@ -23,7 +23,7 @@
         <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
           <div class="what-do mt--40">
             <div class="content">
-              <h5 class="heading heading-h5 theme-color-2 wow move-up">
+              <h5 class="heading heading-h5 text-primary wow move-up">
                 Fresh ideas
               </h5>
               <div class="bkseparator--20" />
@@ -36,7 +36,7 @@
         <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12 offset-xl-1">
           <div class="what-do mt--40">
             <div class="content">
-              <h5 class="heading heading-h5 theme-color-2 wow move-up">
+              <h5 class="heading heading-h5 text-primary wow move-up">
                 Unique designs
               </h5>
               <div class="bkseparator--20" />
