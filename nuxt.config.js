@@ -52,12 +52,16 @@ export default {
           {
             code: 'en',
             iso: 'en-US',
-            file: 'en.json'
+            file: 'en.json',
+            shortName: 'EN',
+            name: 'English'
           },
           {
             code: 'pt-BR',
             iso: 'pt-BR',
-            file: 'pt-BR.json'
+            file: 'pt-BR.json',
+            shortName: 'PT-BR',
+            name: 'Português'
           }
         ],
         langDir: 'locales/',
