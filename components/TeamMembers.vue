@@ -1,18 +1,15 @@
 <template>
-  <div class="bk-team-area bg-white pt--55 pb--75 pt_md--20 pt_sm--20 pb_md--40 pb_sm--40 team-bottom-text-image" :style="{backgroundImage: `url('/img/icons/team.png')`}">
+  <div class="pt-2 pb-5 pt-md-4 pt-lg-5 pb-md-4 pb-lg-5 bg-white">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 mt--40">
-          <div class="brook-section-title wow move-up">
-            <h3 class="heading heading-h3 font-large pr--40 text-secondary">
+        <div class="col-lg-3 mt-5">
+          <div>
+            <h3 class="stapp-heading-text font-weight-bold pr-4 text-secondary">
               {{ $t('teamMembers.sectionTitle') }}
             </h3>
-            <hr class="mt--35 bg-primary" :style="{width: '200px', height: '5px'}">
-            <!-- <div class="thumb mt--35">
-              <img src="/img/service/icon-box/wavy-icon.png" alt="Multipurpose">
-            </div> -->
-            <div class="content mt--45">
-              <p class="bk_pra line-height-1-87 font-16">
+            <hr class="mt-5 bg-primary" :style="{width: '200px', height: '5px'}">
+            <div class="content mt-5">
+              <p class="stapp-body-text">
                 {{ $t('teamMembers.sectionSubtitle') }}
               </p>
             </div>
@@ -21,10 +18,10 @@
 
         <div class="col-lg-9">
           <div class="row">
-            <div v-for="teamMember in $t('teamMembers.members')" :key="teamMember.id" class="col-lg-6 col-sm-6 wow move-up mt--40">
-              <div class="team team_style--4">
+            <div v-for="teamMember in $t('teamMembers.members')" :key="teamMember.id" class="col-sm-6 mt-5">
+              <div class="text-center">
                 <div class="inner">
-                  <div class="content-header">
+                  <div class="content-header mb-4">
                     <div class="thumb">
                       <!-- Remove the img below when we have real images -->
                       <img class="bg-secondary rounded-circle" :style="{width: '200px', height: '200px'}">
@@ -39,10 +36,10 @@
                     </div> -->
                   </div>
                   <div class="content-body">
-                    <h4 class="heading text-primary">
+                    <h4 class="stapp-heading-text font-weight-bold text-primary">
                       {{ teamMember.name }}
                     </h4>
-                    <div class="position">
+                    <div class="stapp-body-text">
                       {{ teamMember.description }}
                     </div>
                   </div>

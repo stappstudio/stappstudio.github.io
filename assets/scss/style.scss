@@ -1,151 +1,23 @@
-/*====================
-	Version: 1.0
-======================*/
+.stapp-heading-text {
+	//louis_george_caferegular
+	//Poppins
+	font-family: 'Noto Sans', 'Roboto', sans-serif !important;
+	// margin: 0 !important;
+}
 
-/**************************************************************
-	
-	STYLESHEET INDEXING
-	|
-	|___ Default Styles
-	|	|___ variables
-	|	|___ mixins
-	|	|___ reset
-	|	|___ typography
-	|	|___ animations
-	|	|___ shortcode
-	|
-	|
-	|___Elements Styles
-	|	|___ Button
-	|	|___ section-title
-	|	|___ service
-	|	|___ counterup
-	|	|___ team
-	|	|___ blog-list
-	|	|___ contact
-	|	|___ about
-	|	|___ call-to-action
-	|	|___ slick-arrow
-	|	|___ motivational-archive
-	|	|___ social
-	|	|___ shortnote
-	|	|___ flexable-image-slide
-	|	|___ carousel-slider
-	|	|___ countdown
-	|	|___ progress-charts
-	|	|___ gradation
-	|	|___ typed-text
-	|	|___ Politic
-	|	|___ pricing-plans
-	|	|___ career
-	|	|___ maintenance
-	|	|___ contagion
-	|	|___ player
-	|	|___ 404
-	|	
-	|
-	|
-	|___Components Styles
-	|	|___ video 
-	|	|___ breadcrumb 
-	|	|___ instagram
-	|	|___ popup
-	|	|___ shopping-cart
-	|	|___ mega-menu
-	|	|___ toolbar
-	|	|___ typography
-	|	|___ list
-	|	|___ pricing-box
-	|	|___ icon-boxes
-	|	|___ dividers
-	|	|___ message-box
-	|	|___ accordion
-	|	|___ google-map
-	|	|___ rows-column
-	|	|___ info-boxes
-	|	|___ loader
-	|
-	|
-	|
-	|___Portfolio Styles
-	|	|___ portfolio-grid 
-	|	|___ portfolio-grid-metro 
-	|	|___ portfolio-caption
-	|	|___ mesonry-button
-	|	|___ paralax
-	|	|___ has-center
-	|	|___ type-hover
-	|	|___ portfolio-details
-	|
-	|
-	|
-	|___Blog Grid Styles
-	|	|___ blod-grid 
-	|	|___ pagination 
-	|	|___ blog-mesonry
-	|	|___ blog-grid-no-flex
-	|	|___ blog-grid-minimal
-	|	|___ blog-details
-	|	|___ blog-sidebar
-	|
-	|
-	|
-	|___Shop Sidebar Styles
-	|	|___ shop-sidebar 
-	|	|___ single-product 
-	|	|___ cart
-	|	|___ checkout
-	|	|___ compare
-	|	|___ my-account
-	|	|___ vertical-slide
-	|	|___ login
-	|	|___ table-form
-	|
-	|
-	|
-	|___Template Styles
-	|	|___ header
-	|	|___ sidebar-header
-	|	|___ navigation
-	|	|___ banner
-	|	|___ feature
-	|	|___ startup-service
-	|	|___ freelancer
-	|	|___ hamber-menu
-	|	|___ left-vertical-header
-	|	|___ fullscreen-slider
-	|	|___ sidebar-mobilemenu
-	|	|___ header-broadsheets
-	|	|___ onepage
-	|	|___ foodie
-	|	|___ portfolio-slide
-	|	|___ photo-slide
-	|	|___ vertical-slide
-	|	|___ musician
-	|	|___ vertical-slider-portfolio
-	|	|___ shop-slide
-	|	|___ product
-	|	|___ presentation
-	|	|___ footer
-	|	|___ Color Variation
-	|	|___ color-2
-	|	|___ font-variation
-	|	|___ preview
-	|	|___ responsive
-	|
-	|___ END STYLESHEET INDEXING
-
-***************************************************************/
+.stapp-body-text {
+	font-family: 'Roboto', sans-serif !important;
+}
 
 
 /*===================================
     Default Styles
 ====================================*/
-@import 'default/animations';
-@import 'default/reset';
+// @import 'default/animations';
+// @import 'default/reset';
 @import 'default/shortcode';
-@import 'default/typography';
-@import 'default/variables';
+// @import 'default/typography';
+// @import 'default/variables';
 
 // @import 'default/mixins';
 @import '../fonts/fontawesome-free/css/fontawesome-all.min.css';
@@ -156,25 +28,10 @@
 // @import '../css/cerebrisans.css';
 // @import '../css/animation.css';
 
-
-/*====================================
-	Elements Styles
-=====================================*/
-@import 'elements/carousel-slider';
-@import 'elements/social';
-@import 'elements/team';
-
 /*================================
 	Components Style
 =================================*/
 @import 'components/dividers';
 @import 'components/icon-boxes';
 @import 'components/info-boxes';
-@import 'components/typography';
-
-/*=================================
-	Template Styles
-==================================*/
-@import 'template/footer';
-@import 'template/header';
-@import 'template/startup-service';
+// @import 'components/typography'

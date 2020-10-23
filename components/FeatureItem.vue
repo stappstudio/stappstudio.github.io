@@ -1,13 +1,13 @@
 <template>
-  <div class="single-motive-speach text-white">
-    <div class="icon">
-      <i :class="[feature.iconName, 'fa-fw']" />
+  <div class="text-white">
+    <div class="d-block text-center mr-3 mb-3">
+      <i :class="[feature.iconName, 'fa-fw', 'fa-2x']" />
     </div>
-    <div class="content">
-      <h4>
+    <div class="text-center">
+      <h5 class="stapp-heading-text font-weight-bold mb-4">
         {{ feature.name }}
-      </h4>
-      <p>
+      </h5>
+      <p class="stapp-body-text mb-1">
         {{ feature.description }}
       </p>
     </div>
