@@ -1,12 +1,6 @@
 <template>
   <div class="stapp-logo-wrapper position-absolute container-fluid h-100 d-flex justify-content-center align-items-center">
-    <picture class="text-center">
-      <source
-        srcset="/img/logo/stapp_home_dark.png"
-        media="(prefers-color-scheme: dark)"
-      >
-      <img src="/img/logo/stapp_home_light.png" class="stapp-logo">
-    </picture>
+    <div class="stapp-logo" />
   </div>
 </template>
 
@@ -23,9 +17,22 @@
 }
 
 .stapp-logo {
+  @media (prefers-color-scheme: light) {
+    background-image: url('/img/logo/stapp_home_light.png');
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-image: url('/img/logo/stapp_home_dark.png');
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
   // Extra small devices (portrait phones, less than 576px)
   // No media query since this is the default in Bootstrap
   width: 75%;
+  height: 100%;
   // height: auto;
 
   // Small devices (landscape phones, 576px and up)
@@ -33,7 +40,7 @@
 
   // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {
-    // width: auto;
+    width: 100%;
     height: 50%;
   }
 
