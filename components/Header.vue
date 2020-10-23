@@ -80,6 +80,18 @@ export default {
 </script>
 
 <style lang="scss">
+.vue-fixed-header--isFixed {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    position: fixed !important;
+    background-color: #333;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+    animation: 900ms cubic-bezier(0.2, 1, 0.22, 1) 0s normal none 1 running fadeInDown;
+    padding-top: 0;
+}
+
 .left-header {
   /* Extra small devices (phones, less than 768px) */
   width: 100%;

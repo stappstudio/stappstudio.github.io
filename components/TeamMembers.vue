@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-2 pb-5 pt-md-4 pt-lg-5 pb-md-4 pb-lg-5 bg-white">
+  <div class="pt-2 pb-5 pt-md-4 pt-lg-5 pb-md-4 pb-lg-5 px-5 bg-white">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 mt-5">
