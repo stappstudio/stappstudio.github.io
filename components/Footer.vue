@@ -30,7 +30,7 @@
                     </p>
                     <div class="mt-5">
                       <a v-for="social in socials" :key="social.id" :href="social.link" class="d-inline-block p-0 mr-3 mr-lg-0 ml-lg-4 text-white" target="_blank">
-                        <i :class="['fab', 'fa-2x', social.iconName]" />
+                        <font-awesome-icon class="fa-2x" :icon="['fab', social.faIconName]" />
                       </a>
                       <!-- <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin" /></a>
                       <a href="https://github.com/stappstudio" target="_blank"><i class="fab fa-github" /></a>
@@ -77,22 +77,22 @@ export default {
         {
           id: 1,
           link: 'https://www.linkedin.com/',
-          iconName: 'fa-linkedin'
+          faIconName: 'linkedin'
         },
         {
           id: 2,
           link: 'https://github.com/stappstudio',
-          iconName: 'fa-github'
+          faIconName: 'github'
         },
         {
           id: 3,
           link: 'https://instagram.com/stappstudio',
-          iconName: 'fa-instagram'
+          faIconName: 'instagram'
         },
         {
           id: 4,
           link: 'https://twitter.com/stappstudio',
-          iconName: 'fa-twitter'
+          faIconName: 'twitter'
         }
       ]
     }

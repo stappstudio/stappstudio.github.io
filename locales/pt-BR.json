@@ -33,37 +33,37 @@
   "features": [
     {
       "id": 1,
-      "iconName": "fas fa-code",
+      "faIconName": "code",
       "name": "Nome da característica",
       "description": "Descrição da característica."
     },
     {
       "id": 2,
-      "iconName": "fas fa-terminal",
+      "faIconName": "terminal",
       "name": "Nome da Característica",
       "description": "Descrição da característica."
     },
     {
       "id": 3,
-      "iconName": "fas fa-file-code",
+      "faIconName": "file-code",
       "name": "Nome da Característica",
       "description": "Descrição da característica."
     },
     {
       "id": 4,
-      "iconName": "fas fa-bug",
+      "faIconName": "bug",
       "name": "Nome da Característica",
       "description": "Descrição da característica."
     },
     {
       "id": 5,
-      "iconName": "fas fa-meteor",
+      "faIconName": "meteor",
       "name": "Nome da Característica",
       "description": "Descrição da característica."
     },
     {
       "id": 6,
-      "iconName": "fas fa-plane",
+      "faIconName": "plane",
       "name": "Nome da Característica",
       "description": "Descrição da característica."
     }

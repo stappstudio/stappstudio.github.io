@@ -33,37 +33,37 @@
   "features": [
     {
       "id": 1,
-      "iconName": "fas fa-code",
+      "faIconName": "code",
       "name": "Feature Name",
       "description": "Feature description."
     },
     {
       "id": 2,
-      "iconName": "fas fa-terminal",
+      "faIconName": "terminal",
       "name": "Feature Name",
       "description": "Feature description."
     },
     {
       "id": 3,
-      "iconName": "fas fa-file-code",
+      "faIconName": "file-code",
       "name": "Feature Name",
       "description": "Feature description."
     },
     {
       "id": 4,
-      "iconName": "fas fa-bug",
+      "faIconName": "bug",
       "name": "Feature Name",
       "description": "Feature description."
     },
     {
       "id": 5,
-      "iconName": "fas fa-meteor",
+      "faIconName": "meteor",
       "name": "Feature Name",
       "description": "Feature description."
     },
     {
       "id": 6,
-      "iconName": "fas fa-plane",
+      "faIconName": "plane",
       "name": "Feature Name",
       "description": "Feature description."
     }

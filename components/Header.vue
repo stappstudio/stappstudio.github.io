@@ -48,7 +48,7 @@
         <div class="d-none d-md-block w-50 pl-5 pr-3 pr-lg-5 bg-primary">
           <div class="half-container d-flex text-right justify-content-end align-items-center h-100">
             <h5 class="stapp-heading-text font-weight-bold mb-0 text-white">
-              <i class="fas fa-laptop-code" />
+              <font-awesome-icon prefix="fas" icon="laptop-code" />
               {{ $t('header.slogan') }}
             </h5>
           </div>

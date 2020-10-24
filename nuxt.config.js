@@ -15,7 +15,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap'}
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'},
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap'}
     ]
@@ -37,8 +36,37 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    [
+      '@nuxtjs/fontawesome',
+      {
+        // component: 'fa',
+        suffix: true,
+        icons: {
+          solid: [
+            // Header
+            'faLaptopCode',
+            // Features
+            'faCode',
+            'faTerminal',
+            'faFileCode',
+            'faBug',
+            'faMeteor',
+            'faPlane'
+          ],
+          // Footer brands
+          brands: [
+            'faLinkedin',
+            'faGithub',
+            'faInstagram',
+            'faTwitter',
+          ]
+        }
+      }
+    ]
   ],
+
+  
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -75,8 +103,7 @@ export default {
           }
         }
       }
-    ],
-    
+    ]
   ],
 
 
