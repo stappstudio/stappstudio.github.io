@@ -18,11 +18,11 @@
 
 .stapp-logo {
   @media (prefers-color-scheme: light) {
-    background-image: url('/img/logo/stapp_home_light.png');
+    background-image: url('/img/logo/vertical_light.png');
   }
 
   @media (prefers-color-scheme: dark) {
-    background-image: url('/img/logo/stapp_home_dark.png');
+    background-image: url('/img/logo/vertical_dark.png');
   }
 
   background-repeat: no-repeat;

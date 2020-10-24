@@ -1,7 +1,7 @@
 <template>
   <div class="position-relative">
     <div class="bg-image w-100 justify-content-center align-items-center position-relative d-flex">
-      <div class="container">
+      <div class="px-5 container">
         <div class="row">
           <div class="col-12">
             <div class="text-center">

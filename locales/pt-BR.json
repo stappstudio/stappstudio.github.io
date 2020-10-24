@@ -89,14 +89,14 @@
       {
         "id": 1,
         "name": "João de Souza",
-        "description": "Desenvolvedor",
-        "imageSrc": ""
+        "description": "Co-Fundador",
+        "imageSrc": "/img/team/john.jpg"
       },
       {
         "id": 2,
         "name": "Edison Santiago",
-        "description": "Desenvolvedor",
-        "imageSrc": ""
+        "description": "Co-Fundador",
+        "imageSrc": "/img/team/edison.jpg"
       }
     ]
   },

@@ -24,8 +24,8 @@
                   <div class="content-header mb-4">
                     <div class="thumb">
                       <!-- Remove the img below when we have real images -->
-                      <img class="bg-secondary rounded-circle" :style="{width: '200px', height: '200px'}">
-                      <!-- <img :src="teamMember.imageSrc" :alt="teamMember.alt"> -->
+                      <!-- <img class="bg-secondary border border-primary rounded-circle" :style="{width: '200px', height: '200px'}"> -->
+                      <img :src="teamMember.imageSrc" :alt="teamMember.alt" class="team-member-picture bg-secondary border border-primary rounded-circle">
                     </div>
                     <!-- <div class="social-network">
                       <div class="social-list">
@@ -52,3 +52,11 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.team-member-picture {
+  width: 150px;
+  height: 150px;
+  border-width: 2px !important;
+}
+</style>

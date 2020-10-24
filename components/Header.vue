@@ -5,7 +5,7 @@
         <div class="left-header d-flex justify-content-end align-items-center pl-3 pl-lg-5 pr-3 bg-secondary">
           <div class="half-container d-flex align-items-center flex-grow-1">
             <div class="logo flex-grow-1">
-              <img class="py-3" src="/img/logo/stapp.png" alt="Stapp Studio Logo">
+              <img class="py-3" src="/img/logo/horizontal_dark.png" alt="Stapp Studio Logo">
             </div>
 
             <div class="flex-shrink-0 text-white text-right lang-switcher">
