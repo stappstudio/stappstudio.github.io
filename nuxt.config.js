@@ -106,11 +106,13 @@ export default {
     ]
   ],
 
-
-  styleResources: {
-    scss: [
-      'assets/scss/default/_variables.scss'
-    ]
+  bootstrapVue: {
+    // Bootstrap CSS is custom imported at scss/_variables.scss
+    bootstrapCSS: false,
+    bootstrapVueCSS: false,
+    // We don't use any bootstrap plugins
+    componentPlugins: [],
+    directivePlugins: []
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
