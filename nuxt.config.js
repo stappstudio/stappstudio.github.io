@@ -15,15 +15,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap' }
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     'assets/scss/style.scss',
-    'assets/scss/_variables.scss',
+    'assets/scss/_variables.scss'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -59,14 +59,12 @@ export default {
             'faLinkedin',
             'faGithub',
             'faInstagram',
-            'faTwitter',
+            'faTwitter'
           ]
         }
       }
     ]
   ],
-
-  
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -98,8 +96,8 @@ export default {
         vueI18n: {
           fallbackLocale: 'en',
           messages: {
-            'en': require('./locales/en'),
-            'pt-BR': require('./locales/pt-BR'),
+            en: require('./locales/en'),
+            'pt-BR': require('./locales/pt-BR')
           }
         }
       }
@@ -117,5 +115,12 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true
+    }
   }
 }
