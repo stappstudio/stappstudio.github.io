@@ -5,12 +5,12 @@
         <div class="row">
           <div class="col-12">
             <div class="text-center">
-              <h5 class="stapp-heading-text text-capitalize font-weight-bold mb-4 text-white">
-                {{ $t('hero.sectionSubtitle') }}
-              </h5>
               <h1 class="display-2 stapp-heading-text font-weight-bold text-white">
                 {{ $t('hero.sectionTitle') }}
               </h1>
+              <h5 class="stapp-heading-text text-capitalize font-weight-bold mb-4 text-white">
+                {{ $t('hero.sectionSubtitle') }}
+              </h5>
               <!-- <n-link to="/" class="brook-btn bk-btn-white btn-sd-size btn-rounded space-between">
                 White button
               </n-link> -->

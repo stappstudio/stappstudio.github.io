@@ -3,69 +3,69 @@
     "slogan": "developing experiences"
   },
   "hero": {
-    "sectionSubtitle": "English Subtitle",
-    "sectionTitle": "English title"
+    "sectionTitle": "We build apps.",
+    "sectionSubtitle": "That's it."
   },
   "mainFeatures": {
     "sectionTitle": "Providing a complete app solution",
-    "sectionSubtitle": "detailed explication of the complete solution talking about all the needed steps and so on",
+    "sectionSubtitle": "handling all the details to keep your app up and running",
     "features": [
       {
         "id": 1,
         "iconSrc": "/img/icon/box-icon-01.png",
-        "name": "Main Feature Title",
-        "description": "Main Feature Detailed description spanning more than one line."
+        "name": "Design",
+        "description": "Craft an user-centered design to provide the best possible experience to your customers"
       },
       {
         "id": 2,
         "iconSrc": "/img/icon/box-icon-02.gif",
-        "name": "Main Feature Title",
-        "description": "Main Feature Detailed description spanning more than one line."
+        "name": "Develop",
+        "description": "Build the app and all the services needed for it to work flawlessly"
       },
       {
         "id": 3,
         "iconSrc": "/img/icon/box-icon-03.gif",
-        "name": "Main Feature Title",
-        "description": "Main Feature Detailed description spanning more than one line."
+        "name": "Deploy",
+        "description": "Publish your app and keep it available so your customers can use it whenever they want to"
       }
     ]
   },
   "features": [
     {
       "id": 1,
-      "faIconName": "code",
-      "name": "Feature Name",
-      "description": "Feature description."
+      "faIconName": "book-reader",
+      "name": "UX Studies",
+      "description": "The design is carefully crafted based on research and not on assumptions."
     },
     {
       "id": 2,
-      "faIconName": "terminal",
-      "name": "Feature Name",
-      "description": "Feature description."
+      "faIconName": "mobile-alt",
+      "name": "Interactive Prototypes",
+      "description": "You can feel the app during the design process so you can help us validate it."
     },
     {
       "id": 3,
-      "faIconName": "file-code",
-      "name": "Feature Name",
-      "description": "Feature description."
+      "faIconName": "redo",
+      "name": "Constant Deliveries",
+      "description": "We develop your app incrementally, so we always have something new to show you."
     },
     {
       "id": 4,
-      "faIconName": "bug",
-      "name": "Feature Name",
-      "description": "Feature description."
+      "faIconName": "server",
+      "name": "Reliable Platforms",
+      "description": "All our code run on reliable platforms from big companies."
     },
     {
       "id": 5,
-      "faIconName": "meteor",
-      "name": "Feature Name",
-      "description": "Feature description."
+      "faIconName": "building",
+      "name": "Hosting",
+      "description": "We handle the hosting of your app's related services, like APIs and databases."
     },
     {
       "id": 6,
-      "faIconName": "plane",
-      "name": "Feature Name",
-      "description": "Feature description."
+      "faIconName": "ambulance",
+      "name": "Support",
+      "description": "If something brokes or does not work properly, we are always there to fix it."
     }
   ],
   "informations": {

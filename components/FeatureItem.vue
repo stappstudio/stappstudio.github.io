@@ -1,6 +1,6 @@
 <template>
   <div class="text-white">
-    <div class="d-block text-center mr-3 mb-3">
+    <div class="d-block text-center mb-3">
       <font-awesome-icon class="fa-fw fa-2x" :icon="['fas', feature.faIconName]" />
     </div>
     <div class="text-center">

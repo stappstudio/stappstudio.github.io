@@ -47,12 +47,12 @@ export default {
             // Header
             'faLaptopCode',
             // Features
-            'faCode',
-            'faTerminal',
-            'faFileCode',
-            'faBug',
-            'faMeteor',
-            'faPlane'
+            'faBookReader',
+            'faMobileAlt',
+            'faRedo',
+            'faServer',
+            'faBuilding',
+            'faAmbulance'
           ],
           // Footer brands
           brands: [
