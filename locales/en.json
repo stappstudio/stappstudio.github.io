@@ -3,12 +3,12 @@
     "slogan": "developing experiences"
   },
   "hero": {
-    "sectionTitle": "We build apps.",
-    "sectionSubtitle": "That's it."
+    "sectionTitle": "Turn your app into reality",
+    "sectionSubtitle": "Helping you craft a high-quality app"
   },
   "mainFeatures": {
     "sectionTitle": "Providing a complete app solution",
-    "sectionSubtitle": "handling all the details to keep your app up and running",
+    "sectionSubtitle": "we handle all the details to keep your app up and running",
     "features": [
       {
         "id": 1,
@@ -53,7 +53,7 @@
       "id": 4,
       "faIconName": "server",
       "name": "Reliable Platforms",
-      "description": "All our code run on reliable platforms from big companies."
+      "description": "All our code run on reliable platforms from trustable companies."
     },
     {
       "id": 5,
@@ -104,6 +104,6 @@
     "message": "Let's build something?",
     "contactUs": "Get in touch",
     "email": "us@stapp.studio",
-    "copyright": "© 2020 Stapp Studio. All Rights Reserved."
+    "copyright": "© 2021 Stapp Studio. All Rights Reserved."
   }
 }

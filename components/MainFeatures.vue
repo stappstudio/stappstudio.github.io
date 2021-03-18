@@ -13,7 +13,7 @@
             </div> -->
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-5 mt-md-0">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-md-0">
           <div class="brook-section-details wow move-up">
             <p class="stapp-body-text bk_pra font-16 line-height-1-87">
               {{ $t('mainFeatures.sectionSubtitle') }}
@@ -21,12 +21,12 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-4">
         <div class="col-12">
           <div class="row">
             <div v-for="feature in $t('mainFeatures.features')" :key="feature.id" class="col-lg-4 col-sm-6 wow move-up">
               <div class="feature-wrapper text-center bg-transparent mt-2">
-                <div class="display-2 mb-4">
+                <div class="mb-4 text-secondary">
                   <img :src="feature.iconSrc" alt="feature icon">
                 </div>
                 <div class="content">

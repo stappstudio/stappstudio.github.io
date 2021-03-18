@@ -5,12 +5,12 @@
         <div class="row">
           <div class="col-12">
             <div class="text-center">
-              <h1 class="display-2 stapp-heading-text font-weight-bold text-white">
+              <h1 class="stapp-heading-text font-weight-bold text-white">
                 {{ $t('hero.sectionTitle') }}
               </h1>
-              <h5 class="stapp-heading-text text-capitalize font-weight-bold mb-4 text-white">
+              <!-- <h4 class="stapp-heading-text text-capitalize font-weight-bold my-4 text-white">
                 {{ $t('hero.sectionSubtitle') }}
-              </h5>
+              </h4> -->
               <!-- <n-link to="/" class="brook-btn bk-btn-white btn-sd-size btn-rounded space-between">
                 White button
               </n-link> -->
@@ -36,9 +36,9 @@
   height: 200px;
 
   // Small devices (landscape phones, 576px and up)
-  @media (min-width: 576px) {
-    height: 270px;
-  }
+  // @media (min-width: 576px) {
+  //   height: 270px;
+  // }
 
   // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {
@@ -47,12 +47,12 @@
 
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
-    height:390px
+    height:325px
   }
 
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
-    height:450px
+    height:350px
   }
 }
 
@@ -60,43 +60,43 @@ h1 {
   // Extra small devices (portrait phones, less than 576px)
   // Small devices (landscape phones, 576px and up)
   // No media query since this is the default in Bootstrap
-  font-size: 33px;
+  font-size: 32px;
 
   // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {
-    font-size: 44px;
+    font-size: 40px;
   }
 
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
-    font-size: 58px;
+    font-size: 48px;
   }
 
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
-    font-size: 80px;
+    font-size: 56px;
   }
 }
 
-h5 {
+h4 {
   // Extra small devices (portrait phones, less than 576px)
   // Small devices (landscape phones, 576px and up)
   // No media query since this is the default in Bootstrap
-  font-size: 12px;
+  font-size: 18px;
 
   // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
-    font-size: 15px;
-  }
+  // @media (min-width: 768px) {
+  //   font-size: 15px;
+  // }
 
-  // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
-    font-size: 16px;
-  }
+  // // Large devices (desktops, 992px and up)
+  // @media (min-width: 992px) {
+  //   font-size: 16px;
+  // }
 
-  // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {
-    font-size: 18px;
-  }
+  // // Extra large devices (large desktops, 1200px and up)
+  // @media (min-width: 1200px) {
+  //   font-size: 18px;
+  // }
 }
 </style>

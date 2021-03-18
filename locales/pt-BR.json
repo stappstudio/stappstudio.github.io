@@ -3,69 +3,69 @@
     "slogan": "desenvolvendo experiências"
   },
   "hero": {
-    "sectionSubtitle": "Subtítulo em Português",
-    "sectionTitle": "Título em Português"
+    "sectionTitle": "Título em Português",
+    "sectionSubtitle": "Subtítulo em Português"
   },
   "mainFeatures": {
-    "sectionTitle": "uma solução completa para seu app",
-    "sectionSubtitle": "explicação da solução completa falando sobre todos os passos necessários e etc",
+    "sectionTitle": "Uma solução completa para seu app",
+    "sectionSubtitle": "cuidamos de todos os detalhes para manter seu app funcionando",
     "features": [
       {
         "id": 1,
         "iconSrc": "/img/icon/box-icon-01.png",
-        "name": "Título da característica",
-        "description": "Descrição da característica principal ocupando mais de uma linha."
+        "name": "Design",
+        "description": "Criamos um design centrado no usuário para fornecer a melhor experiência possível para seus clientes"
       },
       {
         "id": 2,
         "iconSrc": "/img/icon/box-icon-02.gif",
-        "name": "Título da característica",
-        "description": "Descrição da característica principal ocupando mais de uma linha."
+        "name": "Desenvolvimento",
+        "description": "Construímos seu app e todos os serviços necessários para ele funcionar perfeitamente"
       },
       {
         "id": 3,
         "iconSrc": "/img/icon/box-icon-03.gif",
-        "name": "Título da característica",
-        "description": "Descrição da característica principal ocupando mais de uma linha."
+        "name": "Publicação",
+        "description": "Publicamos seu app e mantemos ele disponível para que seus clientes possam usá-lo sempre que desejarem"
       }
     ]
   },
   "features": [
     {
       "id": 1,
-      "faIconName": "code",
-      "name": "Nome da característica",
-      "description": "Descrição da característica."
+      "faIconName": "book-reader",
+      "name": "Estudos de UX",
+      "description": "O design é cuidadosamente pensado baseado em pesquisas e não em premissas."
     },
     {
       "id": 2,
-      "faIconName": "terminal",
-      "name": "Nome da Característica",
-      "description": "Descrição da característica."
+      "faIconName": "mobile-alt",
+      "name": "Protótipos Interativos",
+      "description": "Você pode sentir o app durante o processo de design para nos ajudar a validá-lo."
     },
     {
       "id": 3,
-      "faIconName": "file-code",
-      "name": "Nome da Característica",
-      "description": "Descrição da característica."
+      "faIconName": "redo",
+      "name": "Entregas Incrementais",
+      "description": "Nós desenvolvemos seu app de forma incremental, então sempre teremos algo novo para mostrar."
     },
     {
       "id": 4,
-      "faIconName": "bug",
-      "name": "Nome da Característica",
-      "description": "Descrição da característica."
+      "faIconName": "server",
+      "name": "Plataformas Confiáveis",
+      "description": "Todos os nossos códigos rodam em plataformas confiáveis de empresas com boa reputação."
     },
     {
       "id": 5,
-      "faIconName": "meteor",
-      "name": "Nome da Característica",
-      "description": "Descrição da característica."
+      "faIconName": "building",
+      "name": "Hospedagem",
+      "description": "Nós gerenciamos a hospedagem de todos os serviços relacionados a seu app, como APIs e banco de dados."
     },
     {
       "id": 6,
-      "faIconName": "plane",
-      "name": "Nome da Característica",
-      "description": "Descrição da característica."
+      "faIconName": "ambulance",
+      "name": "Suporte",
+      "description": "Se algo não estiver funcionando direito estamos sempre a postos para arrumar."
     }
   ],
   "informations": {
@@ -104,6 +104,6 @@
     "message": "Vamos construir algo?",
     "contactUs": "Entre em contato",
     "email": "contato@stapp.studio",
-    "copyright": "© 2020 Stapp Studio. Todos os Direitos Reservados."
+    "copyright": "© 2021 Stapp Studio. Todos os Direitos Reservados."
   }
 }
