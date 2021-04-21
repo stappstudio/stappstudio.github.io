@@ -46,6 +46,10 @@ export default {
           solid: [
             // Header
             'faLaptopCode',
+            // Main Features
+            'faPencilRuler',
+            'faFileCode',
+            'faPaperPlane',
             // Features
             'faBookReader',
             'faMobileAlt',
@@ -53,6 +57,11 @@ export default {
             'faServer',
             'faBuilding',
             'faAmbulance'
+          ],
+          regular: [
+            // 'faPencilRuler',
+            'faFileCode',
+            'faPaperPlane'
           ],
           // Footer brands
           brands: [

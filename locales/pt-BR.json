@@ -12,18 +12,24 @@
     "features": [
       {
         "id": 1,
+        "faIconType": "fas",
+        "faIconName": "pencil-ruler",
         "iconSrc": "/img/icon/box-icon-01.png",
         "name": "Design",
         "description": "Criamos um design centrado no usuário para fornecer a melhor experiência possível para seus clientes"
       },
       {
         "id": 2,
+        "faIconType": "far",
+        "faIconName": "file-code",
         "iconSrc": "/img/icon/box-icon-02.gif",
         "name": "Desenvolvimento",
         "description": "Construímos seu app e todos os serviços necessários para ele funcionar perfeitamente"
       },
       {
         "id": 3,
+        "faIconType": "far",
+        "faIconName": "paper-plane",
         "iconSrc": "/img/icon/box-icon-03.gif",
         "name": "Publicação",
         "description": "Publicamos seu app e mantemos ele disponível para que seus clientes possam usá-lo sempre que desejarem"
@@ -84,7 +90,7 @@
   },
   "teamMembers": {
     "sectionTitle": "Nosso Time",
-    "sectionSubtitle": "A gente é bom d+",
+    "sectionSubtitle": "",
     "members": [
       {
         "id": 1,

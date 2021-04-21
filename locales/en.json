@@ -12,18 +12,24 @@
     "features": [
       {
         "id": 1,
+        "faIconType": "fas",
+        "faIconName": "pencil-ruler",
         "iconSrc": "/img/icon/box-icon-01.png",
         "name": "Design",
         "description": "Craft an user-centered design to provide the best possible experience to your customers"
       },
       {
         "id": 2,
+        "faIconType": "far",
+        "faIconName": "file-code",
         "iconSrc": "/img/icon/box-icon-02.gif",
         "name": "Develop",
         "description": "Build the app and all the services needed for it to work flawlessly"
       },
       {
         "id": 3,
+        "faIconType": "far",
+        "faIconName": "paper-plane",
         "iconSrc": "/img/icon/box-icon-03.gif",
         "name": "Deploy",
         "description": "Publish your app and keep it available so your customers can use it whenever they want to"
@@ -84,7 +90,7 @@
   },
   "teamMembers": {
     "sectionTitle": "Creative Team",
-    "sectionSubtitle": "Our team rocks!",
+    "sectionSubtitle": "",
     "members": [
       {
         "id": 1,

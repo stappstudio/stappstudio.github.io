@@ -26,8 +26,8 @@
           <div class="row">
             <div v-for="feature in $t('mainFeatures.features')" :key="feature.id" class="col-lg-4 col-sm-6 wow move-up">
               <div class="feature-wrapper text-center bg-transparent mt-2">
-                <div class="mb-4 text-secondary">
-                  <img :src="feature.iconSrc" alt="feature icon">
+                <div class="my-4 text-secondary">
+                  <font-awesome-icon class="fa-fw fa-4x" :icon="['fas', feature.faIconName]" />
                 </div>
                 <div class="content">
                   <h5 class="stapp-heading-text font-weight-bold mb-3">
