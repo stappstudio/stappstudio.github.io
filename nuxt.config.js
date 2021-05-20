@@ -14,16 +14,16 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }//,
+      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' },
+      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap' }
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    'assets/scss/style.scss',
-    'assets/scss/_variables.scss'
+    'assets/css/main.css',
+    'assets/fonts/fonts.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -37,6 +37,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
     [
       '@nuxtjs/fontawesome',
       {
@@ -80,6 +81,7 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     '@nuxtjs/style-resources',
+    '@nuxtjs/svg',
     [
       'nuxt-i18n',
       {
@@ -124,6 +126,11 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    postcss: {
+      plugins: {
+        'postcss-nested': {}
+      }
+    }
   },
 
   vue: {

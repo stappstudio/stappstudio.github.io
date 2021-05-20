@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.5",
@@ -22,17 +23,21 @@
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/fontawesome": "^1.1.2",
+    "@nuxtjs/svg": "^0.1.12",
+    "@nuxtjs/tailwindcss": "^4.1.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
     "eslint-plugin-nuxt": "^1.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.15",
+    "postcss-nested": "^5.0.5",
     "push-dir": "^0.4.1",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "10.1.1",
     "webpack": "^4.43.0"
   }
 }

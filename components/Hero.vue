@@ -1,6 +1,6 @@
 <template>
-  <div class="position-relative">
-    <div class="bg-image w-100 justify-content-center align-items-center position-relative d-flex">
+  <div class="relative">
+    <div class="bg-image h-52 md:h-72 lg:h-80 xl:h-96 w-full justify-center items-center relative flex">
       <div class="px-5 container">
         <div class="row">
           <div class="col-12">
@@ -30,73 +30,5 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
-  // Extra small devices (portrait phones, less than 576px)
-  // No media query since this is the default in Bootstrap
-  height: 200px;
-
-  // Small devices (landscape phones, 576px and up)
-  // @media (min-width: 576px) {
-  //   height: 270px;
-  // }
-
-  // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
-    height: 300px;
-  }
-
-  // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
-    height:325px
-  }
-
-  // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {
-    height:350px
-  }
-}
-
-h1 {
-  // Extra small devices (portrait phones, less than 576px)
-  // Small devices (landscape phones, 576px and up)
-  // No media query since this is the default in Bootstrap
-  font-size: 32px;
-
-  // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
-    font-size: 40px;
-  }
-
-  // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
-    font-size: 48px;
-  }
-
-  // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {
-    font-size: 56px;
-  }
-}
-
-h4 {
-  // Extra small devices (portrait phones, less than 576px)
-  // Small devices (landscape phones, 576px and up)
-  // No media query since this is the default in Bootstrap
-  font-size: 18px;
-
-  // Medium devices (tablets, 768px and up)
-  // @media (min-width: 768px) {
-  //   font-size: 15px;
-  // }
-
-  // // Large devices (desktops, 992px and up)
-  // @media (min-width: 992px) {
-  //   font-size: 16px;
-  // }
-
-  // // Extra large devices (large desktops, 1200px and up)
-  // @media (min-width: 1200px) {
-  //   font-size: 18px;
-  // }
 }
 </style>

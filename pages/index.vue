@@ -1,16 +1,17 @@
 <template>
-  <div class="main-container">
+  <div>
     <Header />
 
-    <Hero />
+    <div class="w-full h-96 bg-white" />
+    <!-- <Hero /> -->
 
-    <MainFeatures />
+    <FeatureDefine />
 
-    <Features />
+    <FeatureDesign />
 
-    <!-- <Informations /> -->
+    <FeatureDevelop />
 
-    <TeamMembers />
+    <FeatureDistribute />
 
     <Footer />
   </div>
