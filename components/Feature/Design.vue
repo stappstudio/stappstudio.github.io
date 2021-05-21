@@ -12,9 +12,17 @@
         <span slot="title">
           Design
         </span>
-        <p class="stapp-body-text">
-          Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense. You don't believe in the Force, do you?
-        </p>
+        <div>
+          <p class="stapp-body-text">
+            Test our solutions with interactive prototypes.
+          </p>
+          <p class="stapp-body-text">
+            Put ourselves on the users's place.
+          </p>
+          <p class="stapp-body-text">
+            Feel how the solution would look like.
+          </p>
+        </div>
       </FeatureText>
     </div>
   </section>

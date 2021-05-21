@@ -19,10 +19,10 @@
           <div class="ml-8 md:ml-0 flex flex-col items-start">
             <p>grow on mobile</p>
             <p>
-              satisfy your customers
+              improve the customer satisfaction
             </p>
             <p>
-              bring more clients
+              reach your goals
             </p>
             <button class="-ml-8 mt-8 px-8 py-3 bg-stapp-pink rounded-full text-white text-xl font-bold">
               Talk to us

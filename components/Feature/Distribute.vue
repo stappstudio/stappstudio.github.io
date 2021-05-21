@@ -12,9 +12,17 @@
         <span slot="title">
           Distribute
         </span>
-        <p class="stapp-body-text">
-          Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense. You don't believe in the Force, do you?
-        </p>
+        <div>
+          <p class="stapp-body-text">
+            Reach our user's phones.
+          </p>
+          <p class="stapp-body-text">
+            Scale our architecture so our solution is always available for everyone who needs it.
+          </p>
+          <p class="stapp-body-text">
+            Pay attention to deviations and correct them quickly.
+          </p>
+        </div>
       </FeatureText>
     </div>
   </section>

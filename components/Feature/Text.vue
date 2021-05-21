@@ -8,7 +8,9 @@
         <p class="text-3xl sm:text-5xl mb-10 stapp-heading-text capitalize">
           <slot name="title" class="pointer-events-auto" />
         </p>
-        <slot class="pointer-events-auto" />
+        <div class="feature-text pointer-events-auto">
+          <slot />
+        </div>
       </div>
     </div>
   </div>
@@ -24,3 +26,9 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+.feature-text p {
+  @apply mt-4;
+}
+</style>
