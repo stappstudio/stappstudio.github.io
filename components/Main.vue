@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-image w-full py-12 overflow-x-hidden">
-    <div class="relative content-container">
-      <div class="pt-36 pb-12 px-8 flex flex-col">
+  <section class="main-section w-full py-12 overflow-x-hidden">
+    <div class="relative w-full h-full content-container">
+      <div class="w-full h-full lg:h-auto lg:pt-36 lg:pb-12 px-8 flex flex-col justify-center items-start">
         <div class="flex flex-wrap justify-start items-center text-5xl text-white stapp-heading-text">
           <span>We </span>
           <div ref="slider" class="verbs-slider text-stapp-pink frame-one flex flex-col font-bold text-center px-4 h-16">
@@ -36,8 +36,8 @@
 
 <script>
 // Enable scrollTo smooth scrolling on Safari
-import { elementScrollToPolyfill } from 'seamless-scroll-polyfill'
-elementScrollToPolyfill()
+import { polyfill } from 'seamless-scroll-polyfill'
+polyfill()
 
 export default {
   data () {
@@ -75,7 +75,14 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.bg-image {
+
+@media (max-width: 1023px) {
+  .main-section {
+    height: calc(100vh - 5rem);
+  }
+}
+
+.main-section {
   background-image: url('/img/bg/hero-bg.jpg');
   background-color: rgba(2, 0, 66, 0.8);
   background-blend-mode: darken;

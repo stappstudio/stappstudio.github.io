@@ -5,7 +5,7 @@
   >
     <div class="w-2/3 lg:w-1/2 h-full mx-0 lg:mx-auto px-8 lg:px-32 flex items-center justify-center">
       <div class="flex-grow">
-        <p class="text-3xl sm:text-5xl mb-10 stapp-heading-text font-bold capitalize">
+        <p class="text-3xl sm:text-5xl mb-10 stapp-heading-text capitalize">
           <slot name="title" class="pointer-events-auto" />
         </p>
         <slot class="pointer-events-auto" />
