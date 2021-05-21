@@ -13,10 +13,10 @@
           <span>high-quality apps</span>
         </div>
         <div class="my-8 flex flex-wrap justify-start items-start text-xl text-white stapp-body-text">
-          <p>
+          <p class="w-full md:w-auto">
             Helping you to&nbsp;
           </p>
-          <div class="flex flex-col items-start">
+          <div class="ml-8 md:ml-0 flex flex-col items-start">
             <p>grow on mobile</p>
             <p>
               satisfy your customers
@@ -35,6 +35,10 @@
 </template>
 
 <script>
+// Enable scrollTo smooth scrolling on Safari
+import { elementScrollToPolyfill } from 'seamless-scroll-polyfill'
+elementScrollToPolyfill()
+
 export default {
   data () {
     return {
