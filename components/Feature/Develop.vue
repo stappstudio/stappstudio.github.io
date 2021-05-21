@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full py-12 bg-stapp-blue overflow-x-hidden">
+  <section class="py-12 bg-stapp-blue overflow-x-hidden">
     <div class="relative content-container">
       <FeatureIcon class="laptop-feature-icon" right>
         <IconLaptop>

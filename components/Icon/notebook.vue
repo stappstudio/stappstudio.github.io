@@ -8,17 +8,17 @@
           </div>
         </div>
         <div class="notebook-divisor-wrapper">
-          <div class="notebook-page-divisor">
-            <div />
+          <div class="notebook-page-divisor-margin">
+            <div class="notebook-page-divisor" />
           </div>
-          <div class="notebook-page-divisor">
-            <div />
+          <div class="notebook-page-divisor-margin">
+            <div class="notebook-page-divisor" />
           </div>
-          <div class="notebook-page-divisor">
-            <div />
+          <div class="notebook-page-divisor-margin">
+            <div class="notebook-page-divisor" />
           </div>
-          <div class="notebook-page-divisor">
-            <div />
+          <div class="notebook-page-divisor-margin">
+            <div class="notebook-page-divisor" />
           </div>
         </div>
         <div class="notebook-right-page-margin">
@@ -81,20 +81,20 @@ export default {
   width: 4%;
   height: 100%;
 
-  .notebook-page-divisor {
+  .notebook-page-divisor-margin {
     background-color: currentColor;
     height: 5%;
     width: 300%;
-    border-radius: 20%/50%;
+    border-radius: 20% 20% 20% 20% / 50% 50% 50% 50%;
     transform: translateX(-33%);
     overflow: hidden;
     padding: 20%;
 
-    div {
+    .notebook-page-divisor {
       width: 100%;
       height: 100%;
       background-color: var(--backgroundColor);
-      border-radius: 20%/50%;
+      border-radius: inherit;
 
       &:hover {
         background-color: currentColor;

@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full py-12 bg-white">
+  <section class="py-12 bg-white">
     <div class="relative content-container" @mouseover.prevent>
       <FeatureIcon class="design-feature-icon">
         <IconDesign>

@@ -2,16 +2,11 @@
   <div>
     <Header />
 
-    <div class="w-full h-96 bg-white" />
-    <!-- <Hero /> -->
+    <Main />
 
-    <FeatureDefine />
+    <HowWeDo />
 
-    <FeatureDesign />
-
-    <FeatureDevelop />
-
-    <FeatureDistribute />
+    <FeatureWrapper />
 
     <Footer />
   </div>

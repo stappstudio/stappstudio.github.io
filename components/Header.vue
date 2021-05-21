@@ -7,7 +7,7 @@
     </div>
     <!-- Main Header Content -->
     <div class="relative container mx-auto flex items-stretch h-20 z-50">
-      <div class="w-full md:w-1/2 flex justify-end items-center pl-3 pl-lg-5 pr-3 bg-stapp-blue">
+      <div class="w-full md:w-1/2 flex justify-end items-center pl-5 pl-lg-8 pr-5 bg-stapp-blue">
         <div class="flex items-center flex-grow">
           <div class="logo flex-grow">
             <img class="py-3 h-16" src="/img/logo/horizontal_dark.png" alt="Stapp Studio Logo">
@@ -50,7 +50,7 @@
         </div>
       </div>
 
-      <div class="hidden md:block w-1/2 pl-5 pr-3 pr-lg-5 bg-stapp-pink">
+      <div class="hidden md:block w-1/2 pl-8 pr-5 pr-lg-8 bg-stapp-pink">
         <div class="flex text-right justify-end items-center h-full">
           <h5 class="stapp-heading-text font-bold mb-0 text-white text-xl">
             {{ $t('header.slogan') }}
