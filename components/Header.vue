@@ -13,37 +13,37 @@
             <img class="py-3 h-16" src="/img/logo/horizontal_dark.png" alt="Stapp Studio Logo">
           </div>
 
-          <div class="flex-shrink-0 text-white text-right lang-switcher">
+          <div class="flex-shrink-0 text-white text-sm text-right lang-switcher flex justify-end items-center">
             <template v-for="(locale, index) in $i18n.locales">
               <!-- Display a pipe between the locales -->
-              <span v-if="index > 0" :key="'divider' + locale.code" class="px-1">|</span>
+              <span v-if="index > 0" :key="'divider' + locale.code" class="inline-block px-2">|</span>
 
-              <!-- The current locale is underlined and not clickable -->
-              <span v-if="locale.code === $i18n.locale" :key="'name' + locale.code" class="font-bold">
+              <!-- The current locale is bold and not clickable -->
+              <div v-if="locale.code === $i18n.locale" :key="'name' + locale.code" class="inline-block font-bold">
                 <!-- Show the short name at small screens -->
-                <div class="inline-block lg:hidden">
+                <span class="inline-block lg:hidden">
                   {{ locale.shortName }}
-                </div>
-                <div class="hidden lg:inline-block">
+                </span>
+                <span class="hidden lg:inline-block">
                   {{ locale.name }}
-                </div>
-              </span>
+                </span>
+              </div>
 
               <!-- Available locales are shown as links -->
               <a
-                v-if="locale.code !== $i18n.locale"
-                :key="locale.code"
+                v-else
+                :key="'name' + locale.code"
                 href="#"
                 class="text-white"
                 @click.prevent.stop="$i18n.setLocale(locale.code)"
               >
                 <!-- Show the short name at small screens -->
-                <div class="inline-block lg:hidden">
+                <span class="inline-block lg:hidden">
                   {{ locale.shortName }}
-                </div>
-                <div class="hidden lg:inline-block">
+                </span>
+                <span class="hidden lg:inline-block">
                   {{ locale.name }}
-                </div>
+                </span>
               </a>
             </template>
           </div>

@@ -4,13 +4,13 @@
 
     <OldHero />
 
-    <MainFeatures />
+    <OldMainFeatures />
 
-    <Features />
+    <OldFeatures />
 
     <!-- <Informations /> -->
 
-    <TeamMembers />
+    <OldTeamMembers />
 
     <OldFooter />
   </div>

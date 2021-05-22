@@ -37,7 +37,6 @@
 <script>
 // Enable scrollTo smooth scrolling on Safari
 import { polyfill } from 'seamless-scroll-polyfill'
-polyfill()
 
 export default {
   data () {
@@ -46,6 +45,7 @@ export default {
     }
   },
   mounted () {
+    polyfill()
     const slider = document.querySelector('.verbs-slider')
     slider.addEventListener('scroll', this.onScrollSlider)
     // The slider height is based on rem, so double check the value is correct

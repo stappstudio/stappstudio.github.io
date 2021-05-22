@@ -126,6 +126,14 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    extend (config, { isDev, isClient }) {
+      config.optimization.minimize = false
+    },
+    html: {
+      minify: {
+        minifyJS: false
+      }
+    },
     postcss: {
       plugins: {
         'postcss-nested': {}
