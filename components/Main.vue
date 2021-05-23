@@ -51,11 +51,14 @@ export default {
     // The slider height is based on rem, so double check the value is correct
     this.sliderHeight = slider.clientHeight
 
-    setInterval(() => {
-      slider.scrollBy({ top: '64', behavior: 'smooth' })
-    }, 2000)
+    setTimeout(() => this.slide(), 2000)
   },
   methods: {
+    slide () {
+      const slider = document.querySelector('.verbs-slider')
+      slider.scrollBy({ top: this.sliderHeight, behavior: 'smooth' })
+      setTimeout(() => this.slide(), 2000)
+    },
     onScrollSlider (event) {
       if (event.target.scrollTop === this.sliderHeight) {
         event.target.children.forEach((child, index) => {
