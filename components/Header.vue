@@ -6,7 +6,7 @@
       <div class="hidden md:block w-1/2 h-full bg-stapp-pink" />
     </div>
     <!-- Main Header Content -->
-    <div class="relative container mx-auto flex items-stretch h-20 z-50">
+    <div class="relative content-container mx-auto flex items-stretch h-20 z-50">
       <div class="w-full md:w-1/2 flex justify-end items-center pl-5 pl-lg-8 pr-5 bg-stapp-blue">
         <div class="flex items-center flex-grow">
           <div class="logo flex-grow">
@@ -52,11 +52,22 @@
 
       <div class="hidden md:block w-1/2 pl-8 pr-5 pr-lg-8 bg-stapp-pink">
         <div class="flex text-right justify-end items-center h-full">
-          <h5 class="stapp-heading-text font-bold mb-0 text-white text-xl">
-            {{ $t('header.slogan') }}
+          <h5 class="stapp-heading-text mb-0 text-white text-xl">
+            {{ $t('slogan') }}
           </h5>
         </div>
       </div>
     </div>
   </header>
 </template>
+
+<i18n>
+{
+  "en": {
+    "slogan": "developing experiences"
+  },
+  "br": {
+    "slogan": "desenvolvendo experiências"
+  }
+}
+</i18n>

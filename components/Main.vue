@@ -1,31 +1,27 @@
 <template>
   <section class="main-section w-full py-12 overflow-x-hidden">
-    <div class="relative w-full h-full content-container">
-      <div class="w-full h-full lg:h-auto lg:pt-36 lg:pb-12 px-8 flex flex-col justify-center items-start">
-        <div class="flex flex-wrap justify-start items-center text-5xl text-white stapp-heading-text">
-          <span>We </span>
-          <div ref="slider" class="verbs-slider text-stapp-pink frame-one flex flex-col font-bold text-center px-4 h-16">
-            <span>craft</span>
-            <span>design</span>
-            <span>develop</span>
-            <span>publish</span>
+    <div class="relative content-container flex flex-col justify-center">
+      <div class="w-full h-full lg:h-auto lg:pt-36 lg:pb-12 pl-8 pr-4 flex flex-col justify-center items-start">
+        <div class="large-text w-full flex flex-wrap justify-start items-center text-4xl lg:text-5xl text-white stapp-heading-text">
+          <span>{{ $t('we') }}&nbsp;&nbsp;</span>
+          <div ref="slider" class="verbs-slider text-stapp-pink frame-one flex flex-col font-bold text-left h-16 overflow-x-hidden">
+            <span v-for="verb in $t('verbs')" :key="verb">{{ verb }}&nbsp;&nbsp;</span>
+            <!-- <span>{{ $t('design') }}</span>
+            <span>{{ $t('develop') }}</span>
+            <span>{{ $t('publish') }}</span> -->
           </div>
-          <span>high-quality apps</span>
+          <span class="w-8/12">{{ $t('high-quality') }}</span>
         </div>
         <div class="my-8 flex flex-wrap justify-start items-start text-xl text-white stapp-body-text">
           <p class="w-full md:w-auto">
-            Helping you to&nbsp;
+            {{ $t('helping you') }}&nbsp;
           </p>
           <div class="ml-8 md:ml-0 flex flex-col items-start">
-            <p>grow on mobile</p>
-            <p>
-              improve the customer satisfaction
-            </p>
-            <p>
-              reach your goals
-            </p>
+            <p>{{ $t('grow') }}</p>
+            <p>{{ $t('improve satisfaction') }}</p>
+            <p>{{ $t('reach goals') }}</p>
             <button class="-ml-8 mt-8 px-8 py-3 bg-stapp-pink rounded-full text-white text-xl font-bold">
-              Talk to us
+              {{ $t('contact') }}
             </button>
           </div>
         </div>
@@ -41,7 +37,15 @@ import { polyfill } from 'seamless-scroll-polyfill'
 export default {
   data () {
     return {
-      sliderHeight: 64
+      sliderHeight: 64,
+      timeoutId: undefined
+    }
+  },
+  destroyed () {
+    if (this.timeoutId) {
+      const slider = document.querySelector('.verbs-slider')
+      slider.scrollBy({ top: 0 })
+      clearTimeout(this.timeoutId)
     }
   },
   mounted () {
@@ -51,13 +55,16 @@ export default {
     // The slider height is based on rem, so double check the value is correct
     this.sliderHeight = slider.clientHeight
 
-    setTimeout(() => this.slide(), 2000)
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId)
+    }
+    this.timeoutId = setTimeout(() => this.slide(), 2000)
   },
   methods: {
     slide () {
       const slider = document.querySelector('.verbs-slider')
       slider.scrollBy({ top: this.sliderHeight, behavior: 'smooth' })
-      setTimeout(() => this.slide(), 2000)
+      this.timeoutId = setTimeout(() => this.slide(), 2000)
     },
     onScrollSlider (event) {
       if (event.target.scrollTop === this.sliderHeight) {
@@ -81,7 +88,11 @@ export default {
 
 @media (max-width: 1023px) {
   .main-section {
-    height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
+  }
+
+  .content-container {
+    min-height: calc(100vh - 5rem);
   }
 }
 
@@ -94,12 +105,52 @@ export default {
   background-position: center center;
 }
 
+.large-text {
+  line-height: 3rem !important;
+}
+
 .verbs-slider {
   overflow-y: hidden;
   /* transition: all 2s; */
 
   span {
     @apply my-2;
+    line-height: 3rem !important;
   }
 }
 </style>
+
+<i18n>
+{
+  "en": {
+    "we": "We",
+    "verbs": [
+      "craft",
+      "design",
+      "develop",
+      "publish"
+    ],
+    "high-quality": "high-quality apps",
+    "helping you": "Helping you to",
+    "grow": "grow on mobile",
+    "improve satisfaction": "improve the customer satisfaction",
+    "reach goals": "reach your goals",
+    "contact": "Talk to us"
+  },
+  "br": {
+    "we": "Nós",
+    "verbs": [
+      "criamos",
+      "projetamos",
+      "desenvolvemos",
+      "publicamos"
+    ],
+    "high-quality": "aplicativos de alta qualidade",
+    "helping you": "Te ajudamos a",
+    "grow": "crescer no mobile",
+    "improve satisfaction": "melhorar a satisfação do usuário",
+    "reach goals": "alcançar seus objetivos",
+    "contact": "Entre em contato"
+  }
+}
+</i18n>

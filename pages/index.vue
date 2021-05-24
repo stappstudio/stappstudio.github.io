@@ -15,3 +15,9 @@
     <Footer />
   </div>
 </template>
+
+<style>
+body {
+  @apply bg-stapp-blue;
+}
+</style>

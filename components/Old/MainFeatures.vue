@@ -46,7 +46,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 .feature-wrapper {
   transition: all .3s cubic-bezier(.645,.045,.355,1);
 

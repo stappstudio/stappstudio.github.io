@@ -4,13 +4,13 @@
       <div class="w-full flex flex-wrap justify-center items-start">
         <div class="w-full text-4xl text-center text-stapp-blue stapp-heading-text flex justify-center">
           <div>
-            <span>Creative Team</span>
+            <span>{{ $t('sectionTitle') }}</span>
             <hr class="my-1 bg-stapp-pink h-1">
           </div>
         </div>
 
         <div class="w-full flex flex-wrap justify-center items-stretch">
-          <div v-for="(teamFeature, index) in teamFeatures" :key="index" class="my-8 mx-16 flex flex-col justify-start items-center">
+          <div v-for="(teamFeature, index) in $t('features')" :key="index" class="my-8 mx-16 flex flex-col justify-start items-center">
             <span
               class="text-5xl
               text-stapp-blue
@@ -25,7 +25,7 @@
 
         <div class="w-full flex flex-wrap justify-center items-center">
           <div
-            v-for="teamMember in $t('teamMembers.members')"
+            v-for="teamMember in $t('members')"
             :key="teamMember.id"
             class="my-8 mx-16 flex flex-col justify-start items-center"
           >
@@ -53,3 +53,54 @@ export default {
   }
 }
 </script>
+
+<i18n>
+{
+  "en": {
+    "sectionTitle": "Creative Team",
+    "features": [
+      {
+        "destak": "+7",
+        "text": "years of experience\nin mobile"
+      }
+    ],
+    "members": [
+      {
+        "id": 1,
+        "name": "João de Souza",
+        "description": "Co-Founder",
+        "imageSrc": "/img/team/john.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Edison Santiago",
+        "description": "Co-Founder",
+        "imageSrc": "/img/team/edison.jpg"
+      }
+    ]
+  },
+  "br": {
+    "sectionTitle": "Nosso Time",
+    "features": [
+      {
+        "destak": "+7",
+        "text": "anos de experiência\nem mobile"
+      }
+    ],
+    "members": [
+      {
+        "id": 1,
+        "name": "João de Souza",
+        "description": "Co-Fundador",
+        "imageSrc": "/img/team/john.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Edison Santiago",
+        "description": "Co-Fundador",
+        "imageSrc": "/img/team/edison.jpg"
+      }
+    ]
+  }
+}
+</i18n>

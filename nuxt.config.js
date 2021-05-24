@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: false,
+  // ssr: false,
 
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -10,7 +10,7 @@ export default {
     title: 'Stapp Studio | Developing Experiences',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
@@ -37,91 +37,43 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
-    [
-      '@nuxtjs/fontawesome',
-      {
-        // component: 'fa',
-        suffix: true,
-        icons: {
-          solid: [
-            // Header
-            'faLaptopCode',
-            // Main Features
-            'faPencilRuler',
-            'faFileCode',
-            'faPaperPlane',
-            // Features
-            'faBookReader',
-            'faMobileAlt',
-            'faRedo',
-            'faServer',
-            'faBuilding',
-            'faAmbulance'
-          ],
-          regular: [
-            // 'faPencilRuler',
-            'faFileCode',
-            'faPaperPlane'
-          ],
-          // Footer brands
-          brands: [
-            'faLinkedin',
-            'faGithub',
-            'faInstagram',
-            'faTwitter'
-          ]
-        }
-      }
-    ]
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
-    '@nuxtjs/style-resources',
     '@nuxtjs/svg',
-    [
-      'nuxt-i18n',
-      {
-        locales: [
-          {
-            code: 'en',
-            iso: 'en-US',
-            file: 'en.json',
-            shortName: 'EN',
-            name: 'English'
-          },
-          {
-            code: 'pt-BR',
-            iso: 'pt-BR',
-            file: 'pt-BR.json',
-            shortName: 'PT-BR',
-            name: 'Português'
-          }
-        ],
-        langDir: 'locales/',
-        defaultLocale: 'en',
-        strategy: 'no_prefix',
-        vueI18n: {
-          fallbackLocale: 'en',
-          messages: {
-            en: require('./locales/en'),
-            'pt-BR': require('./locales/pt-BR')
-          }
-        }
-      }
-    ]
+    'nuxt-i18n'
   ],
 
-  bootstrapVue: {
-    // Bootstrap CSS is custom imported at scss/_variables.scss
-    bootstrapCSS: false,
-    bootstrapVueCSS: false,
-    // We don't use any bootstrap plugins
-    componentPlugins: [],
-    directivePlugins: []
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en.json',
+        shortName: 'EN',
+        name: 'English'
+      },
+      {
+        code: 'br',
+        iso: 'pt-BR',
+        file: 'pt-BR.json',
+        shortName: 'PT-BR',
+        name: 'Português'
+      }
+    ],
+    langDir: 'locales/',
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: require('./locales/en'),
+        br: require('./locales/pt-BR')
+      }
+    },
+    vueI18nLoader: true
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

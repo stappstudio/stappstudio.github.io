@@ -4,9 +4,9 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 .stapp-logo-wrapper {
-// Background color
+/* Background color */
   @media (prefers-color-scheme: light) {
     background-color: white;
   }
@@ -29,25 +29,24 @@
   background-position: center;
   background-size: contain;
 
-  // Extra small devices (portrait phones, less than 576px)
-  // No media query since this is the default in Bootstrap
+  /* Extra small devices (portrait phones, less than 576px)
+      No media query since this is the default in Bootstrap */
   width: 75%;
   height: 100%;
-  // height: auto;
 
-  // Small devices (landscape phones, 576px and up)
-  // Same as above
+  /* Small devices (landscape phones, 576px and up)
+      Same as above */
 
-  // Medium devices (tablets, 768px and up)
+  /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
     width: 100%;
     height: 50%;
   }
 
-  // Large devices (desktops, 992px and up)
-  // Same as above
+  /* Large devices (desktops, 992px and up)
+      Same as above */
 
-  // Extra large devices (large desktops, 1200px and up)
-  // Same as above
+  /* Extra large devices (large desktops, 1200px and up)
+      Same as above */
 }
 </style>
