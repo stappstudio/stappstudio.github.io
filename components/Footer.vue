@@ -5,16 +5,16 @@
         <div class="flex flex-wrap items-start">
           <div class="w-full lg:w-1/2 px-6">
             <h1 class="text-4xl text-white stapp-heading-text mb-12">
-              {{ $t('footer.message') }}
+              {{ $t('message') }}
             </h1>
           </div>
           <div class="w-full lg:w-1/2 px-6 mt-4 text-left lg:text-right">
             <h4 class="text-2xl text-white stapp-heading-text mb-12">
-              {{ $t('footer.contactUs') }}
+              {{ $t('contactUs') }}
             </h4>
             <div>
-              <a class="text-white mb-6" :href="'mailto:' + $t('footer.email')">
-                {{ $t('footer.email') }}
+              <a class="text-white mb-6" :href="'mailto:' + $t('email')">
+                {{ $t('email') }}
               </a>
               <p class="text-white">
                 R. Treze de Maio, 92, Cj 21A<br> Curitiba, PR, Brazil
@@ -47,7 +47,7 @@
             </div>
             <div class="w-full lg:w-1/2 copyright-right text-center lg:text-right">
               <p class="text-white">
-                {{ $t('footer.copyright') }}
+                {{ $t('copyright') }}
               </p>
             </div>
           </div>
@@ -104,3 +104,20 @@ export default {
   padding-bottom: env(safe-area-inset-bottom);
 }
 </style>
+
+<i18n>
+{
+  "en": {
+    "message": "Let's build something?",
+    "contactUs": "Get in touch",
+    "email": "us@stapp.studio",
+    "copyright": "© 2021 Stapp Studio. All Rights Reserved."
+  },
+  "br": {
+    "message": "Vamos construir algo?",
+    "contactUs": "Entre em contato",
+    "email": "contato@stapp.studio",
+    "copyright": "© 2021 Stapp Studio. Todos os Direitos Reservados."
+  }
+}
+</i18n>

@@ -1,11 +1,4 @@
 {
-  "header": {
-    "slogan": "developing experiences"
-  },
-  "hero": {
-    "sectionTitle": "Turn your app into reality",
-    "sectionSubtitle": "Helping you craft a high-quality app"
-  },
   "mainFeatures": {
     "sectionTitle": "Providing a complete app solution",
     "sectionSubtitle": "we handle all the details to keep your app up and running",
@@ -73,43 +66,5 @@
       "name": "Support",
       "description": "If something breaks or does not work properly, we are always there to fix it."
     }
-  ],
-  "informations": {
-    "sectionTitle": "Section title",
-    "sectionSubtitle": "Informations section subtitle",
-    "informations": [
-      {
-        "title": "Info #1 title",
-        "description": "Detailed info #1 description spanning some lines"
-      },
-      {
-        "title": "Info #2 title",
-        "description": "Detailed info #2 description spanning some lines"
-      }
-    ]
-  },
-  "teamMembers": {
-    "sectionTitle": "Creative Team",
-    "sectionSubtitle": "",
-    "members": [
-      {
-        "id": 1,
-        "name": "João de Souza",
-        "description": "Co-Founder",
-        "imageSrc": "/img/team/john.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Edison Santiago",
-        "description": "Co-Founder",
-        "imageSrc": "/img/team/edison.jpg"
-      }
-    ]
-  },
-  "footer": {
-    "message": "Let's build something?",
-    "contactUs": "Get in touch",
-    "email": "us@stapp.studio",
-    "copyright": "© 2021 Stapp Studio. All Rights Reserved."
-  }
+  ]
 }

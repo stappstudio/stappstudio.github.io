@@ -10,17 +10,15 @@
       </FeatureIcon>
       <FeatureText right class="text-stapp-blue">
         <span slot="title">
-          Design
+          {{ $t('title') }}
         </span>
         <div>
-          <p class="stapp-body-text">
-            Test our solutions with interactive prototypes.
-          </p>
-          <p class="stapp-body-text">
-            Put ourselves on the users's place.
-          </p>
-          <p class="stapp-body-text">
-            Feel how the solution would look like.
+          <p
+            v-for="text in $t('texts')"
+            :key="text"
+            class="stapp-body-text"
+          >
+            {{ text }}
           </p>
         </div>
       </FeatureText>
@@ -39,3 +37,24 @@
   max-width: 40%;
 }
 </style>
+
+<i18n>
+{
+  "en": {
+    "title": "Design",
+    "texts": [
+      "Test our solutions with interactive prototypes.",
+      "Put ourselves on the users's place.",
+      "Feel how the solution would look like."
+    ]
+  },
+  "br": {
+    "title": "Projetar",
+    "texts": [
+      "Testar nossas soluções com protótipos interativos.",
+      "Nos colocar no lugar do usuário.",
+      "Sentir como ficaria a solução."
+    ]
+  }
+}
+</i18n>

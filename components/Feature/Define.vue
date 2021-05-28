@@ -10,20 +10,15 @@
       </FeatureIcon>
       <FeatureText class="text-white">
         <span slot="title">
-          Define
+          {{ $t('title') }}
         </span>
         <div>
-          <p class="stapp-body-text">
-            Understand your problems, your needs and your goals.
-          </p>
-          <p class="stapp-body-text">
-            Get to know your users and their stories.
-          </p>
-          <p class="stapp-body-text">
-            Identify our challenges.
-          </p>
-          <p class="stapp-body-text">
-            Propose some solutions.
+          <p
+            v-for="text in $t('texts')"
+            :key="text"
+            class="stapp-body-text"
+          >
+            {{ text }}
           </p>
         </div>
       </FeatureText>
@@ -42,3 +37,26 @@
   max-width: 60%;
 }
 </style>
+
+<i18n>
+{
+  "en": {
+    "title": "Define",
+    "texts": [
+      "Understand your problems, your needs and your goals.",
+      "Get to know your users and their stories.",
+      "Identify our challenges.",
+      "Propose some solutions."
+    ]
+  },
+  "br": {
+    "title": "Definir",
+    "texts": [
+      "Compreender seus problemas, suas necessidades e seus objetivos.",
+      "Conhecer seus usuários e suas histórias.",
+      "Identificar nossos desafios.",
+      "Propor algumas soluções."
+    ]
+  }
+}
+</i18n>

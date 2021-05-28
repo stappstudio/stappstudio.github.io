@@ -23,7 +23,7 @@
           </div>
         </div>
 
-        <div class="w-full flex flex-wrap justify-center items-center">
+        <div class="w-full flex flex-wrap justify-center items-start">
           <div
             v-for="teamMember in $t('members')"
             :key="teamMember.id"
@@ -68,13 +68,13 @@ export default {
       {
         "id": 1,
         "name": "João de Souza",
-        "description": "Co-Founder",
+        "description": "",
         "imageSrc": "/img/team/john.jpg"
       },
       {
         "id": 2,
         "name": "Edison Santiago",
-        "description": "Co-Founder",
+        "description": "",
         "imageSrc": "/img/team/edison.jpg"
       }
     ]
@@ -91,13 +91,13 @@ export default {
       {
         "id": 1,
         "name": "João de Souza",
-        "description": "Co-Fundador",
+        "description": "",
         "imageSrc": "/img/team/john.jpg"
       },
       {
         "id": 2,
         "name": "Edison Santiago",
-        "description": "Co-Fundador",
+        "description": "",
         "imageSrc": "/img/team/edison.jpg"
       }
     ]

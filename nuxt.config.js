@@ -63,15 +63,10 @@ export default {
         name: 'Português'
       }
     ],
-    langDir: 'locales/',
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
     vueI18n: {
-      fallbackLocale: 'en',
-      messages: {
-        en: require('./locales/en'),
-        br: require('./locales/pt-BR')
-      }
+      fallbackLocale: 'en'
     },
     vueI18nLoader: true
   },

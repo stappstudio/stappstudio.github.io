@@ -27,7 +27,11 @@
     ]
   },
   "br": {
-    "everything": "Tudo que você precisa para seu app"
+    "everything": "Tudo que você precisa para seu app",
+    "texts": [
+      "Trabalhamos juntos durante todo o processo de criação, elaborando de forma conjunta uma ótima solução que lhe permita atingir os objetivos do seu negócio.",
+      "Somos responsáveis por todas as soluções tecnológicas necessárias para o seu aplicativo, de forma a garantir que tudo funcione perfeitamente e que os usuários possam acessar sempre que precisar."
+    ]
   }
 }
 </i18n>

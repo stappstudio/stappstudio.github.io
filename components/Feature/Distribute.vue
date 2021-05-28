@@ -10,17 +10,15 @@
       </FeatureIcon>
       <FeatureText right class="text-stapp-blue">
         <span slot="title">
-          Distribute
+          {{ $t('title') }}
         </span>
         <div>
-          <p class="stapp-body-text">
-            Reach our user's phones.
-          </p>
-          <p class="stapp-body-text">
-            Scale our architecture so our solution is always available for everyone who needs it.
-          </p>
-          <p class="stapp-body-text">
-            Pay attention to deviations and correct them quickly.
+          <p
+            v-for="text in $t('texts')"
+            :key="text"
+            class="stapp-body-text"
+          >
+            {{ text }}
           </p>
         </div>
       </FeatureText>
@@ -39,3 +37,24 @@
   max-width: 40%;
 }
 </style>
+
+<i18n>
+{
+  "en": {
+    "title": "Distribute",
+    "texts": [
+      "Reach our user's phones.",
+      "Scale our architecture so our solution is always available for everyone who needs it.",
+      "Pay attention to deviations and correct them quickly."
+    ]
+  },
+  "br": {
+    "title": "Distribuir",
+    "texts": [
+      "Chegar aos telefones dos nossos usuários.",
+      "Escalar nossa arquitetura para permitir que nossa solução esteja sempre disponível para todos que a utilizarem.",
+      "Ficar atento aos desvios e corrigí-los rapidamente."
+    ]
+  }
+}
+</i18n>

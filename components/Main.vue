@@ -20,9 +20,9 @@
             <p>{{ $t('grow') }}</p>
             <p>{{ $t('improve satisfaction') }}</p>
             <p>{{ $t('reach goals') }}</p>
-            <button class="-ml-8 mt-8 px-8 py-3 bg-stapp-pink rounded-full text-white text-xl font-bold">
+            <a :href="'mailto:' + $t('email')" class="-ml-8 mt-8 px-8 py-3 rounded-full text-xl font-bold bg-stapp-pink text-white hover:bg-white hover:text-stapp-blue">
               {{ $t('contact') }}
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -67,14 +67,24 @@ export default {
       this.timeoutId = setTimeout(() => this.slide(), 2000)
     },
     onScrollSlider (event) {
+      // If the scroll if finished
       if (event.target.scrollTop === this.sliderHeight) {
+        // How many children (aka verbs) we have?
+        const numberOfChildren = event.target.children.length
+        // Loop through all the verbs
         event.target.children.forEach((child, index) => {
+          // Get the current flex order of the verb
           let currentOrder = child.style.order
+          // At the first time this code runs, the element will NOT have an order
+          //  So, we set the order based on the index
           if (!currentOrder) {
             currentOrder = index + 1
           }
+          // Reduce the order by one
           const newOrder = currentOrder - 1
-          child.style.order = newOrder < 1 ? 4 : newOrder
+          // If the order is less than 1, this means this element was just shown
+          //    So, we put it at the end of the queue
+          child.style.order = newOrder < 1 ? numberOfChildren : newOrder
         })
 
         event.target.scroll({ top: '0' })
@@ -118,6 +128,10 @@ export default {
     line-height: 3rem !important;
   }
 }
+
+button:focus {
+  outline:0;
+}
 </style>
 
 <i18n>
@@ -128,14 +142,16 @@ export default {
       "craft",
       "design",
       "develop",
-      "publish"
+      "publish",
+      "mantain"
     ],
     "high-quality": "high-quality apps",
     "helping you": "Helping you to",
     "grow": "grow on mobile",
     "improve satisfaction": "improve the customer satisfaction",
     "reach goals": "reach your goals",
-    "contact": "Talk to us"
+    "contact": "Talk to us",
+    "email": "us@stapp.studio"
   },
   "br": {
     "we": "Nós",
@@ -143,14 +159,16 @@ export default {
       "criamos",
       "projetamos",
       "desenvolvemos",
-      "publicamos"
+      "publicamos",
+      "mantemos"
     ],
     "high-quality": "aplicativos de alta qualidade",
     "helping you": "Te ajudamos a",
     "grow": "crescer no mobile",
     "improve satisfaction": "melhorar a satisfação do usuário",
     "reach goals": "alcançar seus objetivos",
-    "contact": "Entre em contato"
+    "contact": "Entre em contato",
+    "email": "contato@stapp.studio"
   }
 }
 </i18n>

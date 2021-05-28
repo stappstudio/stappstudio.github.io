@@ -10,17 +10,15 @@
       </FeatureIcon>
       <FeatureText class="text-white">
         <span slot="title">
-          Develop
+          {{ $t('title') }}
         </span>
         <div>
-          <p class="stapp-body-text">
-            Turn code into a product.
-          </p>
-          <p class="stapp-body-text">
-            Build incrementally, so the product is born fast and simple and grows.
-          </p>
-          <p class="stapp-body-text">
-            Test, validate. Use it like our users will.
+          <p
+            v-for="text in $t('texts')"
+            :key="text"
+            class="stapp-body-text"
+          >
+            {{ text }}
           </p>
         </div>
       </FeatureText>
@@ -39,3 +37,24 @@
   max-width: 60%;
 }
 </style>
+
+<i18n>
+{
+  "en": {
+    "title": "Develop",
+    "texts": [
+      "Turn code into a product.",
+      "Build incrementally, so the product is born fast and simple and grows.",
+      "Test, validate. Use it like our users will."
+    ]
+  },
+  "br": {
+    "title": "Desenvolver",
+    "texts": [
+      "Transformar código em um produto.",
+      "Construir aos poucos, o produto nasce simples de forma rápida e vai crescendo.",
+      "Testar, validar, usar o produto igual nossos usuários vão utilizar."
+    ]
+  }
+}
+</i18n>
