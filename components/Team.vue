@@ -39,21 +39,6 @@
   </section>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      teamFeatures: [
-        {
-          destak: '+7',
-          text: 'years of experience\nin mobile'
-        }
-      ]
-    }
-  }
-}
-</script>
-
 <i18n>
 {
   "en": {

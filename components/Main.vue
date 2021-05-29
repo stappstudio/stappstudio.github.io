@@ -1,6 +1,6 @@
 <template>
-  <section class="main-section w-full py-12 overflow-x-hidden">
-    <div class="relative content-container flex flex-col justify-center">
+  <section class="main-section w-full overflow-x-hidden">
+    <div class="relative py-12 content-container flex flex-col justify-center">
       <div class="w-full h-full lg:h-auto lg:pt-36 lg:pb-12 pl-8 pr-4 flex flex-col justify-center items-start">
         <div class="large-text w-full flex flex-wrap justify-start items-center text-4xl lg:text-5xl text-white stapp-heading-text">
           <span>{{ $t('we') }}&nbsp;&nbsp;</span>

@@ -49,7 +49,7 @@
     ]
   },
   "br": {
-    "title": "Projetar",
+    "title": "Design",
     "texts": [
       "Testar nossas soluções com protótipos interativos.",
       "Nos colocar no lugar do usuário.",

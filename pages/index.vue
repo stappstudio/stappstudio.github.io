@@ -8,7 +8,7 @@
 
     <FeatureWrapper />
 
-    <div class="w-full h-48 bg-stapp-blue" />
+    <OtherFeatures />
 
     <Team />
 

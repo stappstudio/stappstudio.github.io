@@ -59,10 +59,10 @@
 </template>
 
 <script>
-import rawIconLinkedIn from '~/assets/icon/linkedin.svg?raw'
-import rawIconGitHub from '~/assets/icon/github.svg?raw'
-import rawIconInstagram from '~/assets/icon/instagram.svg?raw'
-import rawIconTwitter from '~/assets/icon/twitter.svg?raw'
+import rawIconLinkedIn from '~/assets/icon/brands/linkedin.svg?raw'
+import rawIconGitHub from '~/assets/icon/brands/github.svg?raw'
+import rawIconInstagram from '~/assets/icon/brands/instagram.svg?raw'
+import rawIconTwitter from '~/assets/icon/brands/twitter.svg?raw'
 
 export default {
   data () {
