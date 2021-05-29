@@ -4,11 +4,10 @@
       <div class="w-full h-full lg:h-auto lg:pt-36 lg:pb-12 pl-8 pr-4 flex flex-col justify-center items-start">
         <div class="large-text w-full flex flex-wrap justify-start items-center text-4xl lg:text-5xl text-white stapp-heading-text">
           <span>{{ $t('we') }}&nbsp;&nbsp;</span>
-          <div ref="slider" class="verbs-slider text-stapp-pink frame-one flex flex-col font-bold text-left h-16 overflow-x-hidden">
-            <span v-for="verb in $t('verbs')" :key="verb">{{ verb }}&nbsp;&nbsp;</span>
-            <!-- <span>{{ $t('design') }}</span>
-            <span>{{ $t('develop') }}</span>
-            <span>{{ $t('publish') }}</span> -->
+          <div class="verbs-slider-wrapper text-stapp-pink font-bold text-left h-16 overflow-hidden">
+            <div class="verbs-slider animated flex flex-col">
+              <span v-for="verb in $t('verbs')" :key="verb">{{ verb }}&nbsp;&nbsp;</span>
+            </div>
           </div>
           <span class="w-8/12">{{ $t('high-quality') }}</span>
         </div>
@@ -32,7 +31,7 @@
 
 <script>
 // Enable scrollTo smooth scrolling on Safari
-import { polyfill } from 'seamless-scroll-polyfill'
+// import { polyfill } from 'seamless-scroll-polyfill'
 
 export default {
   data () {
@@ -42,54 +41,92 @@ export default {
     }
   },
   destroyed () {
-    if (this.timeoutId) {
-      const slider = document.querySelector('.verbs-slider')
-      slider.scrollBy({ top: 0 })
-      clearTimeout(this.timeoutId)
-    }
+    const slider = document.querySelector('.verbs-slider')
+    slider.removeEventListener('animationend', this.onSliderAnimationEnd)
+    // JS version of the verbs slider animation
+    // if (this.timeoutId) {
+    //   const slider = document.querySelector('.verbs-slider')
+    //   slider.scrollBy({ top: 0 })
+    //   clearTimeout(this.timeoutId)
+    // }
   },
   mounted () {
-    polyfill()
     const slider = document.querySelector('.verbs-slider')
-    slider.addEventListener('scroll', this.onScrollSlider)
-    // The slider height is based on rem, so double check the value is correct
-    this.sliderHeight = slider.clientHeight
+    slider.addEventListener('animationend', this.onSliderAnimationEnd)
 
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId)
-    }
-    this.timeoutId = setTimeout(() => this.slide(), 2000)
+    // JS version of the slider animation
+    // polyfill()
+    // const slider = document.querySelector('.verbs-slider')
+    // slider.addEventListener('scroll', this.onScrollSlider)
+    // // The slider height is based on rem, so double check the value is correct
+    // this.sliderHeight = slider.clientHeight
+
+    // if (this.timeoutId) {
+    //   clearTimeout(this.timeoutId)
+    // }
+    // this.timeoutId = setTimeout(() => this.slide(), 2000)
   },
   methods: {
-    slide () {
-      const slider = document.querySelector('.verbs-slider')
-      slider.scrollBy({ top: this.sliderHeight, behavior: 'smooth' })
-      this.timeoutId = setTimeout(() => this.slide(), 2000)
-    },
-    onScrollSlider (event) {
-      // If the scroll if finished
-      if (event.target.scrollTop === this.sliderHeight) {
-        // How many children (aka verbs) we have?
-        const numberOfChildren = event.target.children.length
-        // Loop through all the verbs
-        event.target.children.forEach((child, index) => {
-          // Get the current flex order of the verb
-          let currentOrder = child.style.order
-          // At the first time this code runs, the element will NOT have an order
-          //  So, we set the order based on the index
-          if (!currentOrder) {
-            currentOrder = index + 1
-          }
-          // Reduce the order by one
-          const newOrder = currentOrder - 1
-          // If the order is less than 1, this means this element was just shown
-          //    So, we put it at the end of the queue
-          child.style.order = newOrder < 1 ? numberOfChildren : newOrder
-        })
+    // JS version of the slider animation
+    // slide () {
+    //   const slider = document.querySelector('.verbs-slider')
+    //   slider.scrollBy({ top: this.sliderHeight, behavior: 'smooth' })
+    //   this.timeoutId = setTimeout(() => this.slide(), 2000)
+    // },
+    onSliderAnimationEnd (event) {
+      // Remove animation
+      event.target.classList.remove('animated')
 
-        event.target.scroll({ top: '0' })
-      }
+      // How many children (aka verbs) we have?
+      const numberOfChildren = event.target.children.length
+      // Loop through all the verbs
+      event.target.children.forEach((child, index) => {
+        // Get the current flex order of the verb
+        let currentOrder = child.style.order
+        // At the first time this code runs, the element will NOT have an order
+        //  So, we set the order based on the index
+        if (!currentOrder) {
+          currentOrder = index + 1
+        }
+        // Reduce the order by one
+        const newOrder = currentOrder - 1
+        // If the order is less than 1, this means this element was just shown
+        //    So, we put it at the end of the queue
+        child.style.order = newOrder < 1 ? numberOfChildren : newOrder
+      })
+
+      // Trigger a reflow to magically reset the css animation
+      /* eslint-disable-next-line */
+      void event.target.offsetWidth
+
+      // Add the css animation again
+      event.target.classList.add('animated')
     }
+    // JS version of the slider animation
+    // onScrollSlider (event) {
+    //   // If the scroll if finished
+    //   if (event.target.scrollTop === this.sliderHeight) {
+    //     // How many children (aka verbs) we have?
+    //     const numberOfChildren = event.target.children.length
+    //     // Loop through all the verbs
+    //     event.target.children.forEach((child, index) => {
+    //       // Get the current flex order of the verb
+    //       let currentOrder = child.style.order
+    //       // At the first time this code runs, the element will NOT have an order
+    //       //  So, we set the order based on the index
+    //       if (!currentOrder) {
+    //         currentOrder = index + 1
+    //       }
+    //       // Reduce the order by one
+    //       const newOrder = currentOrder - 1
+    //       // If the order is less than 1, this means this element was just shown
+    //       //    So, we put it at the end of the queue
+    //       child.style.order = newOrder < 1 ? numberOfChildren : newOrder
+    //     })
+
+    //     event.target.scroll({ top: '0' })
+    //   }
+    // }
   }
 }
 </script>
@@ -120,12 +157,23 @@ export default {
 }
 
 .verbs-slider {
-  overflow-y: hidden;
-  /* transition: all 2s; */
+  &.animated {
+    animation: slider-scroll 0.5s ease-out 2s;
+  }
 
   span {
     @apply my-2;
     line-height: 3rem !important;
+  }
+}
+
+@keyframes slider-scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-4rem);
   }
 }
 
