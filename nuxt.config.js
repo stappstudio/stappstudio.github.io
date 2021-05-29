@@ -64,6 +64,7 @@ export default {
       }
     ],
     defaultLocale: 'en',
+    detectBrowserLanguage: false,
     strategy: 'prefix_except_default',
     vueI18n: {
       fallbackLocale: 'en'

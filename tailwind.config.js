@@ -10,7 +10,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundOpacity: ['active']
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio')

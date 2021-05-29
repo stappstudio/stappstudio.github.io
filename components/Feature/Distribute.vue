@@ -3,7 +3,7 @@
     <div class="relative content-container">
       <FeatureIcon class="phone-feature-icon">
         <IconPhone>
-          <div class="w-full h-full bg-stapp-blue bg-opacity-20 hover:bg-opacity-60">
+          <div class="w-full h-full bg-stapp-blue bg-opacity-20 hover:bg-opacity-60 active:bg-opacity-60">
             <!-- <img class="-m-2" src="carbon.png"> -->
           </div>
         </IconPhone>

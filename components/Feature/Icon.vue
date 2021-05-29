@@ -3,7 +3,7 @@
     class="icon-wrapper flex items-center justify-center"
     :class="right ? 'icon-right' : 'icon-left'"
   >
-    <div class="w-full">
+    <div class="w-full" ontouchstart="">
       <slot />
     </div>
   </div>

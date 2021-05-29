@@ -96,7 +96,7 @@ export default {
       background-color: var(--backgroundColor);
       border-radius: inherit;
 
-      &:hover {
+      &:hover, &:active {
         background-color: currentColor;
       }
     }

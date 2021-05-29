@@ -164,7 +164,7 @@ export default {
         background-color: currentColor;
       }
 
-      &:hover {
+      &:hover, &:active {
         color: rgba(var(--foregroundColor), 1.0);
       }
     }
@@ -199,7 +199,7 @@ export default {
       width: 30%;
     }
 
-    &:hover {
+    &:hover, &:active {
       color: rgba(var(--foregroundColor), 1.0);
     }
   }
@@ -231,7 +231,7 @@ export default {
     justify-items: center;
     align-items: center;
 
-    &:hover {
+    &:hover, &:active {
       background-color: rgba(var(--foregroundColor), 1.0);
     }
   }
