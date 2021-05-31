@@ -13,13 +13,15 @@
           {{ $t('title') }}
         </span>
         <div>
-          <p
-            v-for="text in $t('texts')"
-            :key="text"
-            class="stapp-body-text"
-          >
-            {{ text }}
-          </p>
+          <ul class="list-disc space-y-4">
+            <li
+              v-for="text in $t('texts')"
+              :key="text"
+              class="stapp-body-text"
+            >
+              {{ text }}
+            </li>
+          </ul>
         </div>
       </FeatureText>
     </div>

@@ -108,13 +108,13 @@ export default {
 <i18n>
 {
   "en": {
-    "message": "Let's build something?",
+    "message": "Let's build something together?",
     "contactUs": "Get in touch",
     "email": "us@stapp.studio",
     "copyright": "© 2021 Stapp Studio. All Rights Reserved."
   },
   "br": {
-    "message": "Vamos construir algo?",
+    "message": "Vamos construir algo juntos?",
     "contactUs": "Entre em contato",
     "email": "contato@stapp.studio",
     "copyright": "© 2021 Stapp Studio. Todos os Direitos Reservados."

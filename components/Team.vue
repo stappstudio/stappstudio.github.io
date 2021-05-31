@@ -32,12 +32,32 @@
             <img :src="teamMember.imageSrc" class="w-32 h-32 rounded-full">
             <span class="mt-4 text-xl text-stapp-blue stapp-heading-text">{{ teamMember.name }}</span>
             <span class="whitespace-pre-line text-center stapp-body-text">{{ teamMember.description }}</span>
+            <div class="w-full flex justify-center items-center space-x-2 mt-2">
+              <a :href="teamMember.linkedin" target="_blank">
+                <IconLinkedIn class="w-6 h-6 fill-current text-gray-600 hover:text-black" />
+              </a>
+              <a :href="teamMember.github" target="_blank">
+                <IconGitHub class="w-6 h-6 fill-current text-gray-600 hover:text-black" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import IconLinkedIn from '~/assets/icon/brands/linkedin.svg?inline'
+import IconGitHub from '~/assets/icon/brands/github.svg?inline'
+
+export default {
+  components: {
+    IconLinkedIn,
+    IconGitHub
+  }
+}
+</script>
 
 <i18n>
 {
@@ -54,12 +74,16 @@
         "id": 1,
         "name": "João de Souza",
         "description": "",
+        "linkedin": "https://www.linkedin.com/in/jo%C3%A3o-felipe-oliveira-floriano-de-souza-80105499/",
+        "github": "https://github.com/itsmejohndoe",
         "imageSrc": "/img/team/john.jpg"
       },
       {
         "id": 2,
         "name": "Edison Santiago",
         "description": "",
+        "linkedin": "https://www.linkedin.com/in/edisonsantiago",
+        "github": "https://github.com/edison-stapp",
         "imageSrc": "/img/team/edison.jpg"
       }
     ]
@@ -77,12 +101,16 @@
         "id": 1,
         "name": "João de Souza",
         "description": "",
+        "linkedin": "https://www.linkedin.com/in/jo%C3%A3o-felipe-oliveira-floriano-de-souza-80105499/",
+        "github": "https://github.com/itsmejohndoe",
         "imageSrc": "/img/team/john.jpg"
       },
       {
         "id": 2,
         "name": "Edison Santiago",
         "description": "",
+        "linkedin": "https://www.linkedin.com/in/edisonsantiago",
+        "github": "https://github.com/edison-stapp",
         "imageSrc": "/img/team/edison.jpg"
       }
     ]

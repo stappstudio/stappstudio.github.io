@@ -13,13 +13,15 @@
           {{ $t('title') }}
         </span>
         <div>
-          <p
-            v-for="text in $t('texts')"
-            :key="text"
-            class="stapp-body-text"
-          >
-            {{ text }}
-          </p>
+          <ul class="list-disc space-y-4">
+            <li
+              v-for="text in $t('texts')"
+              :key="text"
+              class="stapp-body-text"
+            >
+              {{ text }}
+            </li>
+          </ul>
         </div>
       </FeatureText>
     </div>
@@ -43,16 +45,18 @@
   "en": {
     "title": "Design",
     "texts": [
-      "Test our solutions with interactive prototypes.",
       "Put ourselves on the users's place.",
+      "Search for inspiration on similar solutions.",
+      "Test our solutions with interactive prototypes.",
       "Feel how the solution would look like."
     ]
   },
   "br": {
     "title": "Design",
     "texts": [
-      "Testar nossas soluções com protótipos interativos.",
       "Nos colocar no lugar do usuário.",
+      "Buscar inspiração em soluções semelhantes.",
+      "Testar nossas soluções com protótipos interativos.",
       "Sentir como ficaria a solução."
     ]
   }

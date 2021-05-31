@@ -98,6 +98,46 @@ export default {
         "description": "If something breaks or does not work properly, we are always there to fix it."
       }
     ]
+  },
+  "br": {
+    "features": [
+      {
+        "id": 1,
+        "iconName": "library",
+        "name": "Estudos de UX",
+        "description": "O design é cuidadosamente pensado baseado em pesquisas e não em premissas."
+      },
+      {
+        "id": 2,
+        "iconName": "phone",
+        "name": "Protótipos Interativos",
+        "description": "Você pode sentir o app durante o processo de design para nos ajudar a validá-lo."
+      },
+      {
+        "id": 3,
+        "iconName": "refresh",
+        "name": "Entregas Incrementais",
+        "description": "Nós desenvolvemos seu app de forma incremental, então sempre teremos algo novo para mostrar."
+      },
+      {
+        "id": 4,
+        "iconName": "dns",
+        "name": "Plataformas Confiáveis",
+        "description": "Todos os nossos códigos rodam em plataformas confiáveis de empresas com boa reputação."
+      },
+      {
+        "id": 5,
+        "iconName": "domain",
+        "name": "Hospedagem",
+        "description": "Nós gerenciamos a hospedagem de todos os serviços relacionados a seu app, como APIs e banco de dados."
+      },
+      {
+        "id": 6,
+        "iconName": "medication",
+        "name": "Suporte",
+        "description": "Se algo não estiver funcionando direito estamos sempre a postos para arrumar."
+      }
+    ]
   }
 }
 </i18n>
