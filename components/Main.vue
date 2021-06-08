@@ -144,7 +144,13 @@ export default {
 }
 
 .main-section {
-  background-image: url('/img/bg/hero-bg.jpg');
+  @media (max-width: 1023px) {
+    background-image: url('/img/bg/hero-bg_sm.jpg');
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url('/img/bg/hero-bg.jpg');
+  }
   background-color: rgba(2, 0, 66, 0.8);
   background-blend-mode: darken;
   background-size: cover;
