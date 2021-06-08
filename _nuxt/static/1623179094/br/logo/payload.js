@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/br/logo", {data:[{}],fetch:{},mutations:void 0});
