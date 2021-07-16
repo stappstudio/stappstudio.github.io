@@ -29,14 +29,14 @@
             :key="teamMember.id"
             class="my-8 mx-16 flex flex-col justify-start items-center"
           >
-            <img :src="teamMember.imageSrc" class="w-32 h-32 rounded-full">
+            <img :src="teamMember.imageSrc" :alt="teamMember.name" class="w-32 h-32 rounded-full">
             <span class="mt-4 text-xl text-stapp-blue stapp-heading-text">{{ teamMember.name }}</span>
             <span class="whitespace-pre-line text-center stapp-body-text">{{ teamMember.description }}</span>
             <div class="w-full flex justify-center items-center space-x-2 mt-2">
-              <a :href="teamMember.linkedin" target="_blank">
+              <a :href="teamMember.linkedin" target="_blank" rel="noopener">
                 <IconLinkedIn class="w-6 h-6 fill-current text-gray-600 hover:text-black" />
               </a>
-              <a :href="teamMember.github" target="_blank">
+              <a :href="teamMember.github" target="_blank" rel="noopener">
                 <IconGitHub class="w-6 h-6 fill-current text-gray-600 hover:text-black" />
               </a>
             </div>

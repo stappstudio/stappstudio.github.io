@@ -10,7 +10,7 @@
       <div class="w-full md:w-1/2 flex justify-end items-center pl-5 pl-lg-8 pr-5 bg-stapp-blue">
         <div class="flex items-center flex-grow">
           <div class="logo flex-grow">
-            <img class="py-3 h-16" src="/img/logo/horizontal_dark.png" alt="Stapp Studio Logo">
+            <img class="py-3 h-16" src="/img/logo/landing.png" alt="Stapp Studio Logo">
           </div>
 
           <div class="flex-shrink-0 text-white text-sm text-right lang-switcher flex justify-end items-center">

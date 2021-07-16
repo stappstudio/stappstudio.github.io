@@ -7,11 +7,11 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Stapp Studio | Developing Experiences',
+    title: 'Stapp Studio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Developing Experiences' },
       { name: 'theme-color', content: '#020042' }
     ],
     link: [
@@ -44,17 +44,20 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxtjs/svg',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    '@nuxt/content'
   ],
 
   i18n: {
+    baseUrl: 'https://stapp.studio',
     locales: [
       {
         code: 'en',
         iso: 'en-US',
         file: 'en.json',
         shortName: 'EN',
-        name: 'English'
+        name: 'English',
+        isCatchallLocale: true
       },
       {
         code: 'br',
@@ -88,6 +91,10 @@ export default {
         'postcss-nested': {}
       }
     }
+  },
+
+  render: {
+    csp: true
   },
 
   vue: {

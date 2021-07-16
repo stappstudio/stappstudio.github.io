@@ -26,6 +26,7 @@
                   :href="social.link"
                   class="inline-block p-0 mr-4 lg:mr-0 lg:ml-6 text-white w-8 h-8"
                   target="_blank"
+                  rel="noopener"
                 >
                   <!-- eslint-disable-next-line -->
                   <div v-html="social.icon" class="fill-current" />
@@ -72,7 +73,7 @@ export default {
         {
           id: 1,
           icon: rawIconLinkedIn,
-          link: 'https://www.linkedin.com/',
+          link: 'https://www.linkedin.com/company/stapp-studio',
           faIconName: 'linkedin'
         },
         {
