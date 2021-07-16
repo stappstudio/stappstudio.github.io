@@ -93,10 +93,6 @@ export default {
     }
   },
 
-  render: {
-    csp: true
-  },
-
   vue: {
     config: {
       productionTip: false,
