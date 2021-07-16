@@ -52,7 +52,7 @@ export default {
   },
   mounted () {
     const slider = document.querySelector('.verbs-slider')
-    slider.addEventListener('animationend', this.onSliderAnimationEnd)
+    slider.addEventListener('animationend', this.onSliderAnimationEnd, { passive: true })
 
     // JS version of the slider animation
     // polyfill()

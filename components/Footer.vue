@@ -9,9 +9,9 @@
             </h1>
           </div>
           <div class="w-full lg:w-1/2 px-6 mt-4 text-left lg:text-right">
-            <h4 class="text-2xl text-white stapp-heading-text mb-12">
+            <h2 class="text-2xl text-white stapp-heading-text mb-12">
               {{ $t('contactUs') }}
-            </h4>
+            </h2>
             <div>
               <a class="text-white mb-6" :href="'mailto:' + $t('email')">
                 {{ $t('email') }}
